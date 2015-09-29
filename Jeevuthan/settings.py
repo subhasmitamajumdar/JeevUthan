@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-
+DEBUG = 
 
 ALLOWED_HOSTS = []
 
@@ -31,14 +31,20 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    #django-apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #third-party-apps
     'crispy_forms',
+    'captcha',
+    'PIL',
+    #my-apps
     'home',
+    'register_for_pet',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -113,3 +119,6 @@ STATICFILES_DIRS = (
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR),"static_in_venv","media_root")
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+SOUTH_MIGRATION_MODULES = {
+    'captcha': 'captcha.south_migrations',
+}

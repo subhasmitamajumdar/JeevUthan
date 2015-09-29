@@ -15,15 +15,29 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from home import views
+from home import views as home_views
+from register_for_pet import views as register_for_pet_views
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', views.firstpage, name='firstpage'),
-    url(r'^location/$', views.location, name='location'),
-    url(r'^ngo/$', views.ngo, name='ngo'),
-    
+    #user auth urls
+    url(r'^accounts/login/$', register_for_pet_views.login),
+    url(r'^accounts/auth/$', register_for_pet_views.auth_view),
+    url(r'^accounts/logout/$', register_for_pet_views.logout),
+    url(r'^accounts/loggedin/$', register_for_pet_views.loggedin),
+    url(r'^accounts/invalid/$', register_for_pet_views.invalid_login),
+    url(r'^registeruser/$', register_for_pet_views.registeruser),
+    url(r'^accounts/register_success/$', register_for_pet_views.register_success),
+    url(r'^registerpet/$', register_for_pet_views.registerpet),
+
+    #app urls
+    url(r'^$', home_views.firstpage),
+    url(r'^location/$', home_views.location),
+    url(r'^ngo/$', home_views.ngo),
+    url(r'^vet/$', home_views.vet),
+
+    url(r'^captcha/', include('captcha.urls')),
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 if settings.DEBUG:
