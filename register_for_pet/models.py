@@ -20,23 +20,14 @@ class User(models.Model):
 
     def __unicode__(self):
         return str(self.username)
+
 class Pet(models.Model):
     name_regex=RegexValidator(regex=r'^[A-Za-z][^A-Z]*$', message="name should contain only characters")
-    height_regex=RegexValidator(regex=r'[0-9]*',message="invalid height")
-    DOG='DOG'
-    CAT='CAT'
-    OTHER='OTHER'
-    type_choice=(
-        (DOG,'Dog'),
-        (CAT,'Cat'),
-        (OTHER,'Other'),
-    )
     pet_name=models.CharField(max_length=30,validators=[name_regex], unique=False)
-    pet_height=models.CharField(max_length=15,validators=[height_regex],unique=False)
-    pet_colour=models.CharField(max_length=30,validators=[name_regex], unique=False)
-    pet_breed=models.CharField(max_length=30,validators=[name_regex], unique=False)
-    pet_missing_date=models.DateField()
-    pet_missing_loc=models.CharField(max_length=30,validators=[name_regex], unique=False)
-    pet_type=models.CharField(max_length=30,choices=type_choice)
+    pet_type=models.CharField(max_length=30,null=True)
+    pet_description=models.CharField(max_length=1000,blank=False,null=True,unique=False)
+    pet_missing_date=models.DateField(blank=True,null=True)
+    pet_missing_loc=models.CharField(max_length=30,validators=[name_regex], unique=False,blank=True,null=True)
+    pet_image=models.ImageField(upload_to=None,height_field=None, width_field=None, max_length=100)
     def __unicode__(self):
         return str(self.pet_name)

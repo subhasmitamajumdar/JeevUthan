@@ -1,8 +1,10 @@
 from django.shortcuts import render
-from home.forms import UserRegisterForm,PetRegisterForm
+from .register import UserRegisterForm,PetRegisterForm
 from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.core.context_processors import csrf
+from formtools.wizard.views import SessionWizardView
+from django.core.mail import send_mail
 
 # Create your views here.
 

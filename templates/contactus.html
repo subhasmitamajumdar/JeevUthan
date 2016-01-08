@@ -1,0 +1,511 @@
+{%load staticfiles%}
+{%include 'navbar.html'%}
+<title>Contact Us</title>
+<div class="icemegamenu">
+<div class="ice-megamenu-toggle">
+
+</div>
+
+
+<ul id="icemegamenu" class="meganizr mzr-slide mzr-responsive">
+<li id="iceMenu_101" class="iceMenuLiLevel_1">
+<a href="{%url 'homepage'%}" class="iceMenuTitle " data-anchor="header">
+<span class="icemega_title icemega_nosubtitle">Home</span>
+</a>
+</li>
+<li id="iceMenu_134" class="iceMenuLiLevel_1 mzr-drop parent ">
+<a href="{%url 'aboutus'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">About Us</span>
+</a>
+<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+<li>
+<div style="float:left;width:280px" class="iceCols">
+<ul>
+<li id="iceMenu_135" class="iceMenuLiLevel_2 ">
+<a href="index.php/about/history.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Our Achievements</span>
+</a>
+</li>
+<li id="iceMenu_136" class="iceMenuLiLevel_2 mzr-drop parent ">
+<a href="index.php/about/team.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Our Services</span>
+</a>
+</li>
+<li id="iceMenu_133" class="iceMenuLiLevel_2 ">
+<a href="index.php/forum.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Gallery</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li id="iceMenu_139" class="iceMenuLiLevel_1 ">
+<a href="{%url 'location'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Help Animal</span>
+</a>
+</li>
+<li id="iceMenu_139" class="iceMenuLiLevel_1 ">
+<a href="{%url 'registerpet'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Missing Pet</span>
+</a>
+</li>
+<li id="iceMenu_239" class="iceMenuLiLevel_1 ">
+<a href="index.php/portfolio.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">FAQs</span>
+</a>
+</li>
+<li id="iceMenu_134" class="iceMenuLiLevel_1 mzr-drop parent ">
+<a class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Login/Register</span>
+</a>
+<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+<li>
+<div style="float:left;width:280px" class="iceCols">
+<ul>
+<li id="iceMenu_135" class="iceMenuLiLevel_2 ">
+<a href="{%url 'registerngo'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">NGOs</span>
+</a>
+</li>
+<li id="iceMenu_136" class="iceMenuLiLevel_2 mzr-drop parent ">
+<a href="{%url 'registervet'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Vets</span>
+</a>
+</li>
+<li id="iceMenu_133" class="iceMenuLiLevel_2 ">
+<a href="{%url 'otheruser'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Others</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li id="iceMenu_142" class="iceMenuLiLevel_1 ">
+<a href="{%url 'contactus'%}" class="icemega_active iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Contact Us</span>
+</a>
+</li>
+</ul>
+</div>
+
+
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+var browser_width1 = jQuery(window).width();
+jQuery("#icemegamenu").find(".icesubMenu").each(function(index){
+var offset1 = jQuery(this).offset();
+var xwidth1 = offset1.left + jQuery(this).width();
+if(xwidth1 >= browser_width1){
+jQuery(this).addClass("ice_righttoleft");
+}
+});
+
+})
+jQuery(window).resize(function() {
+var browser_width = jQuery(window).width();
+jQuery("#icemegamenu").find(".icesubMenu").removeClass("ice_righttoleft").each(function(index){
+var offset = jQuery(this).offset();
+var xwidth = offset.left + jQuery(this).width();
+if(xwidth >= browser_width){
+jQuery(this).addClass("ice_righttoleft");
+}
+});
+});
+</script></div></nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content row -->
+<div id="content">
+<div class="row-container">
+<div class="container-fluid">
+<div class="content-inner row-fluid">
+
+<div id="component" class="span12">
+<main role="main">
+
+
+<div id="system-message-container">
+</div>
+
+<div class="page page-contact page-contact__">
+
+<!-- Heading -->
+<div class="page_header">
+<h3><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">Contacts</span></h3>
+</div>
+<!-- CONTACT FORM -->
+
+<!-- Map -->
+<div class="contact_map" id="contact_map">
+
+
+<!-- Plugin Google Maps version 3.3 by Mike Reumer --><!-- fail nicely if the browser has no Javascript -->
+<noscript><blockquote class='warning'><p><b>JavaScript must be enabled in order for you to use Google Maps.</b> <br/>However, it seems JavaScript is either disabled or not supported by your browser. <br/>To view Google Maps, enable JavaScript by changing your browser options, and then try again.</p></blockquote></noscript><a href="#" title="Print" onclick="javascript:googlemap1_vu4nj_0.gmapPrint();return false;" rel="nofollow" class="mapprint"> </a><div id='mapplaceholder1_vu4nj_0'><div id='mapbody1_vu4nj_0' style="display: none; text-align:center"><div id="googlemap1_vu4nj_0" class="map" style="margin-right: auto; margin-left: auto; width:100%; height:380px;"></div></div></div>
+<script type='text/javascript'>/*<![CDATA[*/
+var mapconfig1_vu4nj_0 = {"debug":"0","visualrefresh":"1","signedin":"0","show":"1","mapclass":"","mapprint":" ","loadmootools":"0","timeinterval":"500","googlewebsite":"maps.google.com","align":"center","width":"100%","height":"380px","effect":"none","deflatitude":"40.579591","deflongitude":"-73.970668","centerlat":"","centerlon":"","address":"","geoloc":"0","geocenter":"0","controltype":"user","zoomtype":"Large","svcontrol":"1","returncontrol":"1","zoom":"10","corzoom":"0","minzoom":"0","maxzoom":"21","rotation":"1","zoomnew":"1","zoomwheel":"0","keyboard":"1","maptype":"Normal","showmaptype":"1","shownormalmaptype":"1","showsatellitemaptype":"1","showhybridmaptype":"1","showterrainmaptype":"1","showscale":"1","overview":"0","dragging":"0","marker":"1","traffic":"0","transit":"0","bicycle":"0","panoramio":"0","panominzoom":"none","panomaxzoom":"none","pano_userid":"","pano_tag":"","weather":"0","weathercloud":"0","weatherinfo":"1","weathertempunit":"celsius","weatherwindunit":"km","dir":"0","dirtype":"D","formdirtype":"0","avoidhighways":"0","avoidtoll":"0","diroptimize":"0","diralternatives":"0","showdir":"1","animdir":"0","animspeed":"1","animautostart":"0","animunit":"kilometers","formspeed":"0","formaddress":"0","formdir":"0","autocompl":"both","txtdir":"Directions: ","txtgetdir":"Get Directions","txtfrom":"From here","txtto":"To here","txtdiraddr":"Address: ","txt_driving":"","txt_avhighways":"","txt_avtoll":"","txt_walking":"","txt_bicycle":"","txt_transit":"","txt_optimize":"","txt_alternatives":"","dirdefault":"0","gotoaddr":"0","gotoaddrzoom":"0","gotoaddrtimeout":"5000","txtaddr":"Address: ##","erraddr":"Address ## not found!","txtgotoaddr":"Goto","clientgeotype":"google","lightbox":"0","txtlightbox":"Open lightbox","lbxcaption":"","lbxwidth":"1600px","lbxheight":"800px","lbxcenterlat":"","lbxcenterlon":"","lbxzoom":"","sv":"none","svpano":"","svwidth":"100%","svheight":"300px","svautorotate":"0","svaddress":"1","kmlrenderer":"google","kmlsidebar":"none","kmlsbwidth":"200px","kmllightbox":"0","kmlhighlite":"{ \"color\": \"#aaffff\", \"opacity\": 0.3,  \"textcolor\": \"#000000\" }","proxy":"0","tilelayer":"","tilemethod":"","tileopacity":"1","tilebounds":"","tileminzoom":"0","tilemaxzoom":"19","twittername":"","twittertweets":"15","twittericon":"\/media\/plugin_googlemap3\/site\/Twitter\/twitter_map_icon.png","twitterline":"#ff0000ff","twitterlinewidth":"4","twitterstartloc":"0,0,0","lang":"en-GB","mapType":"normal","geocoded":0,"tolat":"","tolon":"","toaddress":"","description":"","tooltip":"","kml":[],"kmlsb":[],"layer":[],"lookat":[],"camera":[],"searchtext":"","latitude":"40.579591","longitude":"-73.970668","waypoints":[],"mapnm":"1_vu4nj_0","descr":"0","geoxmloptions":{"titlestyle":" class=kmlinfoheader ","descstyle":" class=kmlinfodesc ","veryquiet":true,"quiet":true,"iwmethod":"click","sortbyname":null,"linktarget":"_self","linkmethod":"dblclick","hilite":{"color":"#aaffff","opacity":0.3,"textcolor":"#000000"},"lang":{"txtdir":"Directions: ","txtto":"To here","txtfrom":"From here","txtsrchnrby":"Search nearby","txtzoomhere":"Zoom Here","txtaddrstart":"Start address:","txtgetdir":"Go","txtback":"\u00ab Back","txtsearchnearby":"Search nearby: e.g. pizza","txtsearch":"Go"},"inputsize":"25"},"icontype":""};
+var mapstyled1_vu4nj_0 = null;
+var googlemap1_vu4nj_0 = new GoogleMaps('1_vu4nj_0', mapconfig1_vu4nj_0, mapstyled1_vu4nj_0);
+/*]]>*/</script>
+</div>
+
+<!-- Address -->
+<div class="row-fluid">
+
+
+<div class="contact_details">
+<div class="contact_details_item span4">
+<h3><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">Address:</span></h3>
+<i class="icons-marker fa fa-home"></i>
+<div class="contact_address">
+138 Atlantis Ln<br/>
+Kingsport<br/>
+Illinois121164<br/>
+</div>
+</div>
+<div class="contact_details_item span4">
+<h3><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">Phones:</span></h3>
+<i class="icons-marker fa fa-phone"></i>
+<div class="contact_details_telephone">
++1 800 559 6580		</div>
+<div class="clearfix"></div>
+<i class="icons-marker fa fa-print"></i>
+<div class="contact_details_fax">
++1 504 889 9898		</div>
+<div class="clearfix"></div>
+</div>
+<div class="contact_details_item span4">
+<h3><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">E-mail:</span></h3>
+<i class="icons-marker fa fa-envelope"></i>
+<div class="contact_details_emailto">
+<span id="cloak56148">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+//<!--
+document.getElementById('cloak56148').innerHTML = '';
+var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+var path = 'hr' + 'ef' + '=';
+var addy56148 = 'm&#97;&#105;l' + '&#64;';
+addy56148 = addy56148 + 'd&#101;m&#111;l&#105;nk' + '&#46;' + '&#111;rg';
+document.getElementById('cloak56148').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy56148 + '\'>' +addy56148+'<\/a>';
+//-->
+</script>		</div>
+<div class="clearfix"></div>
+<div class="contact_vcard">
+<i class="muted">Download information as:      	<a href="contacts54d0.html?format=vcf">vCard</a>
+</i>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>  </div>
+
+<!-- Misc -->
+
+<div class="contact_misc">
+<h3><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Miscellaneous</span> <span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">information:</span></h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>  </div>
+
+<!-- MISC INFO -->
+
+
+</div>   
+
+<!-- Content-bottom -->
+<div id="content-bottom-row" class="row-fluid">
+<div id="content-bottom">
+<div class="moduletable   span12"><div class="module_container"><section id="contact">
+<script>
+jQuery(function($){
+var success = "Thank You! Your message has been sent.",
+error = "Something went wrong, please try again later.",
+id = "115",
+validator = $('#contact-form_115').validate({
+wrapper: "mark",
+rules: {
+phone: {
+number: true
+}
+},
+submitHandler: function(form) {
+$("#message_115")
+.removeClass("success")
+.removeClass("error")
+.addClass("loader")
+.html("Sending message")
+.fadeIn("slow");
+	$(form).ajaxsendmail(validator, success, id);
+	return false;
+}
+});
+$('#clear_115').click(function(){
+$('#contact-form_115').trigger('reset');
+validator.resetForm();
+if (!$.support.placeholder) {
+$('.mod_tm_ajax_contact_form *[placeholder]').each(function(n){
+$(this)
+.parent()
+.find('>.form_placeholder')
+.show();
+})
+}
+return false;
+})
+})
+</script>
+<form class="mod_tm_ajax_contact_form" id="contact-form_115" novalidate>
+<div class="mod_tm_ajax_contact_form_message" id="message_115"></div>
+<fieldset>
+<div class="row-fluid">
+<!-- Name Field -->
+<div class="control-group control-group-input  span4">
+<div class="controls">
+<input name="name" type="text" class="mod_tm_ajax_contact_form_input" id="inputName_115" placeholder="Name" required>
+</div>
+</div>
+<!-- E-mail Field -->
+<div class="control-group control-group-input  span4">
+<div class="controls">
+<input name="email" type="email" class="mod_tm_ajax_contact_form_input" id="inputEmail_115" placeholder="Email" required>
+</div>
+</div>
+<!-- Phone Field -->
+<div class="control-group control-group-input  span4">
+<div class="controls">
+<input name="phone" type="text" class="mod_tm_ajax_contact_form_input" id="inputPhone_115" placeholder="Phone">
+</div>
+</div>
+</div>
+<!-- Message Field -->
+<div class="control-group control-group-textarea ">
+<div class="controls">
+<textarea name="message" class="mod_tm_ajax_contact_form_textarea" id="inputMessage_115" placeholder="Message" required></textarea>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="control-group control-group-button">
+<div class="controls">
+<button type="submit" name="button" value="Send" class="btn btn-primary mod_tm_ajax_contact_form_btn">Send</button>
+<button type="reset" name="button" id="clear_115" value="Clear" class="btn btn-primary mod_tm_ajax_contact_form_btn">Clear</button>
+</div>
+</div>
+</fieldset>
+</form>
+</section></div></div>
+</div>
+</div>
+  </main>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="push"></div>
+</div>
+</div>
+<div id="footer-wrapper">
+<div class="footer-wrapper-inner">
+<!-- Copyright -->
+<div id="copyright" role="contentinfo">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="copyright span8">
+<span class="siteName">Dogs Club</span>
+				  <span class="copy">&copy;</span>  					      <span class="year">2015</span>                                    <a class="privacy_link" rel="license" href="privacy-policy.html">Privacy policy</a>
+						  </div>
+<div class="moduletable   span4"><div class="module_container"><header><h5 class="moduleTitle title"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">FACEBOOK</span> <span class="item_title_part_1 item_title_part_even item_title_part_first_half">LIKE</span> <span class="item_title_part_2 item_title_part_odd item_title_part_second_half item_title_part_last">BOX</span></h5></header><div id="tm_facebook_page_plugin_140" class="tm_facebook_page_plugin_">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "../../../connect.facebook.net/en-GB/sdk.js#xfbml=1&version=v2.3&appId=930899133604868";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><div class="fb-page" data-href="https://www.facebook.com/facebook" data-hide-cover="0" data-show-facepile="1" data-width="" data-height="" data-show-posts="0"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div></div>
+<script>
+;(function ($) {
+var o = $('.fb-page');
+
+$(window).load(function () {
+o.css({'display': 'block'})
+.find('span').css({
+'width': '100%',
+'display': 'block',
+'text-align': 'inherit'
+})
+.find('iframe').css({
+'display': 'inline-block',
+'position': 'static'
+});
+});
+
+$(window).on('load resize', function () {
+if (o.parent().width() < o.find('iframe').width()) {
+o.find('iframe').css({
+'transform': 'scale(' + (o.width() / o.find('iframe').width()) + ')',
+'transform-origin': '0% 0%'
+})
+.parent().css({
+'height': (o.find('iframe').height() * (o.width() / o.find('iframe').width())) + 'px'
+});
+} else {
+o
+.find('span').css({
+'height': o.find('iframe').height()
+})
+.find('iframe').css({
+'transform': 'none'
+});
+}
+});
+})(jQuery);
+</script></div></div><div class="moduletable social_menu  span2"><div class="module_container"><div class="mod-menu">
+<ul class="nav menu social">
+<li class="item-148"><a class="fa fa-tumblr-square" href="#" title="tumblr" >Tumblr</a>
+</li><li class="item-149"><a class="fa fa-facebook-square" href="#" title="facebook" >Facebook</a>
+</li><li class="item-150"><a class="fa fa-youtube" href="#" title="Youtube" >You Tube</a>
+</li>	</ul>
+</div></div></div><div class="moduletable  bordered  span3"><div class="module_container"><header><h5 class="moduleTitle fa fa-phone-square"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">TELEPHONES</span></h5></header><div class="mod-menu">
+<ul class="nav menu ">
+<li class="item-332"><span class="separator">+1 800 603 6035</span></li><li class="item-333"><span class="separator">+1 800 603 0587</span></li>	</ul>
+</div></div></div><div class="moduletable  bordered mail  span3"><div class="module_container"><header><h5 class="moduleTitle fa fa-envelope"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">E-Mail</span> <span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">Us</span></h5></header><div class="mod-menu">
+<ul class="nav menu ">
+<li class="item-334"><a href="http://livedemo00.template-help.com/cdn-cgi/l/email-protection#84e9e5ede8c4e0e1e9ebe8edeaefaaebf6e3" ><span class="__cf_email__" data-cfemail="96fbf7fffad6f2f3fbf9fafff8fdb8f9e4f1">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a>
+</li><li class="item-335"><a href="http://livedemo00.template-help.com/cdn-cgi/l/email-protection#85e8e4ece9c5e1e0e8eae9ecebeeabeaf7e2" ><span class="__cf_email__" data-cfemail="2a4945445e4b495e6a4e4f4745464344410445584d">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a>
+</li>	</ul>
+</div></div></div>
+<!-- {%FOOTER_LINK} -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="back-top">
+<a href="#"><span></span> </a>
+</div>
+<div id="modal" class="modal hide fade loginPopup">
+<div class="modal-hide"></div>
+<div class="modal_wrapper">
+<button type="button" class="close modalClose">×</button>
+<div class="moduletable "><div class="modal-header"><header><h3 class=""><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Login</span> <span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">form</span></h3></header></div><div class="modal-body">
+
+<div class="lr_social_login_basic_150">
+<div class="lr_providers">
+<div class="lr_icons_box"><div>
+<a class="lr_providericons lr_facebook" href="javascript:void(0);" onclick="javascript:window.open('http://www.facebook.com/dialog/oauth?client_id=296188807244109&amp;redirect_uri=http://livedemo00.template-help.com/joomla_55099/?provider=facebook&amp;display=popup&amp;scope=email,user_photos,user_about_me,user_hometown,user_photos','Facebook','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400px,height=400px');" rel="nofollow" title="Login with Facebook">Login with Facebook</a>
+</div><div>
+<a class="lr_providericons lr_google" href="javascript:void(0);" onclick="javascript:window.open('https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=http://livedemo00.template-help.com/joomla_55099/?provider=google&amp;client_id=4ea43331a8b16c6ddb33685fc03635a8&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email','Google','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400px,height=400px');" rel="nofollow" title="Login with Google">Login with Google</a>
+</div></div>
+</div>
+</div></div></div><div class="moduletable olark"><div class="modal-body">
+
+<!-- begin olark code -->
+<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('5615-604-10-1042');/*]]>*/</script>
+<!-- end olark code --></div></div><div class="moduletable "><div class="modal-body"><div class="mod-login mod-login__">
+<form action="http://livedemo00.template-help.com/joomla_55099/index.php/contacts" method="post" id="login-form-16" class="form-inline">
+<div class="mod-login_userdata">
+<div id="form-login-username-16" class="control-group">
+<div class="controls">
+<input id="mod-login_username-16" class="inputbox mod-login_username" type="text" name="username" tabindex="1" size="18" placeholder="User name" required>
+</div>
+</div>
+<div id="form-login-password-16" class="control-group">
+<div class="controls">
+<input id="mod-login_passwd-16" class="inputbox mod-login_passwd" type="password" name="password" tabindex="2" size="18" placeholder="Password"  required>
+</div>
+</div>
+<label for="mod-login_remember-16" class="checkbox">
+<input id="mod-login_remember-16" class="mod-login_remember" type="checkbox" name="remember" value="yes">
+Remember me			</label>
+<div class="mod-login_submit">
+<button type="submit" tabindex="3" name="Submit" class="btn btn-primary">Log in</button>
+</div>
+
+<ul class="unstyled">
+<li><a href="username-reminder-request.html" class="" title="Forgot your username?">Forgot your username?</a></li>
+<li><a href="password-reset.html" class="" title="Forgot your password?">Forgot your password?</a></li>
+<li><a href="user-registration.html">Create an account</a></li>
+</ul>
+<input type="hidden" name="option" value="com_users">
+<input type="hidden" name="task" value="user.login">
+<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZ2aWV3PWNhdGVnb3J5JmxheW91dD10aGVtZTMxNDQ6Y2F0ZWdvcnkmaWQ9OA==">
+<input type="hidden" name="8a2bd8cb4d768959bee88c686d9754bb" value="1" />		</div>
+</form>
+</div></div></div>
+</div>
+</div>
+
+<script src="{%static 'js/jquery.stellar.min.js' %}"></script>
+<script>
+jQuery(function($) {
+$(window).load(function(){
+$.stellar({responsive: true,horizontalScrolling: false});
+});
+});
+</script>
+<script src="{%static 'js/jquery.simplr.smoothscroll.min.js' %}"></script>
+<script src="{%static 'js/jquery.BlackAndWhite.min.js' %}"></script>
+<script>
+;(function($, undefined) {
+$.fn.BlackAndWhite_init = function () {
+var selector = $(this);
+selector.find('img').not(".slide-img").parent().BlackAndWhite({
+invertHoverEffect: ".$this->params->get('invertHoverEffect').",
+intensity: 1,
+responsive: true,
+speed: {
+fadeIn: ".$this->params->get('fadeIn').",
+fadeOut: ".$this->params->get('fadeOut')."
+}
+});
+}
+})(jQuery);
+jQuery(window).load(function($){
+jQuery('.item_img a').find('img').not('.lazy').parent().BlackAndWhite_init();
+});
+</script>
+<script src="{%static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{%static 'js/jquery.fancybox-buttons.js' %}"></script>
+<script src="{%static 'js/jquery.fancybox-media.js' %}"></script>
+<script src="{%static 'js/jquery.fancybox-thumbs.js' %}"></script>
+<script src="{%static 'js/jquery.pep.js' %}"></script>
+<script src="{%static 'js/jquery.vide.min.js' %}"></script>
+<script src="{%static 'js/autosize.min.js' %}"></script>
+<script src="{%static 'js/scripts.js' %}"></script>
+<script type="text/javascript">/* CloudFlare analytics upgrade */
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"72d7dcce33","applicationID":"1388850","transactionName":"ZV1TZ0FTVkFVWkwKXlwXcFBHW1dcG3pXDUVTW0VwXFxMQFtVVAZDHVxYQENeWUs=","queueTime":0,"applicationTime":2035,"atts":"SRpQEQlJRU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+
+<!-- Mirrored from livedemo00.template-help.com/joomla_55099/index.php/contacts by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Sep 2015 18:43:41 GMT -->
+</html>

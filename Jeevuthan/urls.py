@@ -29,13 +29,17 @@ urlpatterns = [
     url(r'^accounts/invalid/$', register_for_pet_views.invalid_login),
     url(r'^registeruser/$', register_for_pet_views.registeruser),
     url(r'^accounts/register_success/$', register_for_pet_views.register_success),
-    url(r'^registerpet/$', register_for_pet_views.registerpet),
+    url(r'^registerpet/$', register_for_pet_views.registerpet,name='registerpet'),
 
     #app urls
-    url(r'^$', home_views.firstpage),
-    url(r'^location/$', home_views.location),
-    url(r'^ngo/$', home_views.ngo),
-    url(r'^vet/$', home_views.vet),
+    url(r'^$', home_views.homepage,name='homepage'),
+    url(r'^aboutus/$',home_views.aboutus,name='aboutus'),
+    url(r'^faqs/$',home_views.faqs,name='faqs'),
+    url(r'^contactus/$',home_views.contactus,name='contactus'),
+    url(r'^otheruser/$',home_views.otheruser,name='otheruser'),
+    url(r'^location/$', home_views.location,name='location'),
+    url(r'^registerngo/$', home_views.ngo,name='registerngo'),
+    url(r'^registervet/$', home_views.vet,name='registervet'),
 
     url(r'^captcha/', include('captcha.urls')),
 

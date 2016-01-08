@@ -1,34 +1,230 @@
- <div class="navbar-wrapper">
-      <div class="container-fluid">
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">JeevUthan</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li class="active"><a href="#about">About Us</a></li>
-                <li><a href="#contact">Missing Pet</a></li>
-                <li><a href="#contact">FAQ</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login/Resister <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">NGO</a></li>
-                    <li><a href="#">Veterinary doctors</a></li>
-                    <li><a href="#">Others</a></li>
-                  </ul>
-                </li>
-                <li><a href="#contact">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        </div>
-    </div>
+{%load staticfiles%}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+
+<!-- Mirrored from livedemo00.template-help.com/joomla_55099/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Sep 2015 18:39:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1442427997,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"8e222404621f70c52d2796f0388d7641",petok:"a1c37912eb7b573cf43893896b9496e8a51be02d-1442860802-86400",betok:"f569a361a41b7ffbe2060fb524b6cf69442d13c5-1442860802-120",zone:"template-help.com",rocket:"0",apps:{"abetterbrowser":{"ie":"7"},"ga_key":{"ua":"UA-7078796-5","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="../../ajax.cloudflare.com/cdn-cgi/nexp/dok3v%3de9627cd26a/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<base />
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript">
+	window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};
+	e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}
+	if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}
+	({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,
+	s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e)
+	{return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}
+	function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n)
+	{n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}
+	var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);
+	var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];
+	o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],
+	gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];
+	var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}
+	catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n)
+	{function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}
+	var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],
+	XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function()
+	{return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],
+	G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+<meta name="generator" content="Joomla! - Open Source Content Management"/>
+<link href="index-2.html" rel="canonical"/>
+<link href="indexc0d0.html?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0"/>
+<link href="index7b17.html?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0"/>
+<link href="{%static 'img/ju-logo.ico' %} type=""/>
+<link rel="stylesheet" href="{%static 'css/layout.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/jquery.fancybox.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/jquery.fancybox-buttons.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/jquery.fancybox-thumbs.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/template.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/lrstyle.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/joom_settings.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/joomgallery.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/mod_joomimg.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/default_icemegamenu.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/default_icemegamenu-reponsive.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/navbar.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{%static 'css/camera.css' %}" type="text/css"/>
+<style type="text/css">.joomimg143_imgct{width:33%!important;float:left;}.joomimg143_img{display:block;text-align:left!important;vertical-align:top!important;}.joomimg143_txt{clear:both;text-align:left!important;vertical-align:top!important;}</style>
+<script src="{%static 'js/jquery.min.js' %}" type="text/javascript"></script>
+<script src="{%static 'js/jquery-noconflict.js' %}" type="text/javascript"></script>
+<script src="{%static 'js/jquery-migrate.min.js' %}" type="text/javascript"></script>
+<script src="{%static 'js/caption.js' %}" type="text/javascript"></script>
+<script src="{%static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{%static 'js/acymailing_module5df1.js?v=493' %}" type="text/javascript"></script>
+<script src="{%static 'js/mootools-core.js' %}" type="text/javascript"></script>
+<script src="{%static 'js/core.js' %}" type="text/javascript"></script>
+<script src="{%static 'js/jquery.mixitup.min.js' %}" type="text/javascript"></script>
+<script src="{%static 'js/menu.js' %}" type="text/javascript"></script>
+<script src="{%static 'js/jquery.rd-navbar.js' %}" type="text/javascript"></script>
+<script src="{%static 'js/camera.min.js' %}" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+jQuery(document).ready(function(){
+	jQuery('.hasTooltip').tooltip({"html": true,"container": "body"});
+});
+window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP")}catch(e){}if(r){r.open("GET.html","index.html",true);r.send(null)}},840000);
+	var acymailing = Array();
+				acymailing['NAMECAPTION'] = 'Name';
+				acymailing['NAME_MISSING'] = 'Please enter your name';
+				acymailing['EMAILCAPTION'] = 'Your E-Mail';
+				acymailing['VALID_EMAIL'] = 'Please enter a valid e-mail address';
+				acymailing['ACCEPT_TERMS'] = 'Please check the Terms and Conditions';
+				acymailing['CAPTCHA_MISSING'] = 'Please enter the security code displayed in the image';
+				acymailing['NO_LIST_SELECTED'] = 'Please select the lists you want to subscribe to';
+
+jQuery(document).ready(function($){
+	 RDMobilemenu_autoinit("#icemegamenu");
+})
+  </script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7078796-5']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<div class="headerContent">
+
+<div id="top">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+
+<div id="logo" class="span12">
+<a href="{% static 'index.html' %}">
+<img src="{%static 'img/logo1.png' %}" alt="JeevUthan">
+<h1><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">
+
+</span> <span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last"></span></h1>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="header">
+<div class="moduletable "><div class="module_container"><div id="camera-slideshow_92" class=" camera_wrap pattern_1">
+<div class="camera-item" data-src="{% static 'img/slide-2.jpg' %}" data-thumb="http://livedemo00.template-help.com/joomla_55099/images/slider/thumb-1.jpg">
+<div class="camera_caption fadeIn">
+<h1 class="slide-title">
+	<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Do not</span>
+	<span class="item_title_part_1 item_title_part_even item_title_part_first_half">act</span>
+	<span class="item_title_part_2 item_title_part_odd item_title_part_second_half">blindly,</span>
+	<span class="item_title_part_3 item_title_part_even item_title_part_second_half item_title_part_last">act</span></h1>
+<h2><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">kindly,</span>
+	<span class="item_title_part_1 item_title_part_even item_title_part_first_half">stop animal</span>
+	<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">abuse</span>
+	<span class="item_title_part_3 item_title_part_even item_title_part_second_half">and</span>
+	<span class="item_title_part_4 item_title_part_odd item_title_part_second_half item_title_part_last">abuse</span></h2>
+
+</div>
+</div>
+<div class="camera-item" data-src="{% static 'img/sympathy.jpg' %}" data-thumb="http://livedemo00.template-help.com/joomla_55099/images/slider/thumb-2.jpg">
+<div class="camera_caption fadeIn">
+<h1 class="slide-title">
+	<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">A</span>
+	<span class="item_title_part_1 item_title_part_even item_title_part_first_half">platform</span>
+	<span class="item_title_part_2 item_title_part_odd item_title_part_second_half item_title_part_last">to</span></h1>
+<h2><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">find</span>
+	<span class="item_title_part_1 item_title_part_even item_title_part_first_half">your</span>
+	<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">missing</span>
+	<span class="item_title_part_3 item_title_part_even item_title_part_second_half">pet</span>
+	<span class="item_title_part_4 item_title_part_odd item_title_part_second_half">and to know</span>
+	<span class="item_title_part_5 item_title_part_even item_title_part_second_half item_title_part_last">your pet</span>
+</h2>
+
+</div>
+</div>
+<div class="camera-item" data-src="{% static 'img/blog-img1.jpg' %}" data-thumb="http://livedemo00.template-help.com/joomla_55099/images/slider/thumb-3.jpg">
+<div class="camera_caption fadeIn">
+<h1 class="slide-title">
+	<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Common</span>
+	<span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">platform</span></h1>
+<h2><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">for </span>
+	<span class="item_title_part_1 item_title_part_even item_title_part_first_half">NGOs</span>
+	<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">and</span>
+	<span class="item_title_part_3 item_title_part_even item_title_part_first_half">veterinarians</span>
+	<span class="item_title_part_4 item_title_part_odd item_title_part_second_half">registration</span>
+	<span class="item_title_part_5 item_title_part_even item_title_part_second_half"></span>
+	<span class="item_title_part_6 item_title_part_odd item_title_part_second_half item_title_part_last"></span></h2>
+
+</div>
+</div>
+</div>
+<script>
+	jQuery(function(){
+		jQuery('#camera-slideshow_92').camera({
+			alignment			: "topCenter", //topLeft, topCenter, topRight, centerLeft, center, centerRight, bottomLeft, bottomCenter, bottomRight
+			autoAdvance				: 1,	//true, false
+			mobileAutoAdvance	: 1, //true, false. Auto-advancing for mobile devices
+			barDirection			: "leftToRight",	//'leftToRight', 'rightToLeft', 'topToBottom', 'bottomToTop'
+			barPosition				: "bottom",	//'bottom', 'left', 'top', 'right'
+			cols							: 6,
+			easing						: "swing",	//for the complete list http://jqueryui.com/demos/effect/easing.html
+			mobileEasing			: "swing",	//leave empty if you want to display the same easing on mobile devices and on desktop etc.
+			fx								: "simpleFade",
+			mobileFx					: "simpleFade",		//leave empty if you want to display the same effect on mobile devices and on desktop etc.
+			gridDifference		: 250,	//to make the grid blocks slower than the slices, this value must be smaller than transPeriod
+			height						: "49.375%",	//here you can type pixels (for instance '300px'), a percentage (relative to the width of the slideshow, for instance '50%') or 'auto'
+			imagePath					: 'http://livedemo00.template-help.com/joomla_55099/templates/theme3144/images/',	//the path to the image folder (it serves for the blank.gif, when you want to display videos)
+			hover							: 0,	//true, false. Puase on state hover. Not available for mobile devices
+			loader						: "none",	//pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
+			loaderColor				: "#eeeeee",
+			loaderBgColor			: "#222222",
+			loaderOpacity			: .8,	//0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1
+			loaderPadding			: 2,	//how many empty pixels you want to display between the loader and its background
+			loaderStroke			: 7,	//the thickness both of the pie loader and of the bar loader. Remember: for the pie, the loader thickness must be less than a half of the pie diameter
+			minHeight					: "200px",	//you can also leave it blank
+			navigation				: 0,	//true or false, to display or not the navigation buttons
+			navigationHover		: 0,	//if true the navigation button (prev, next and play/stop buttons) will be visible on hover state only, if false they will be 	visible always
+			mobileNavHover		: 0,	//same as above, but only for mobile devices
+			opacityOnGrid			: 0,	//true, false. Decide to apply a fade effect to blocks and slices: if your slideshow is fullscreen or simply big, I recommend to set it false to have a smoother effect
+			overlayer					: 0,	//a layer on the images to prevent the users grab them simply by clicking the right button of their mouse (.camera_overlayer)
+			pagination				: 1,
+			playPause					: 0,	//true or false, to display or not the play/pause buttons
+			pauseOnClick			: 0,	//true, false. It stops the slideshow when you click the sliders.
+			pieDiameter				: 38,
+			piePosition				: "rightTop",	//'rightTop', 'leftTop', 'leftBottom', 'rightBottom'
+			portrait					: 0, //true, false. Select true if you don't want that your images are cropped
+			rows							: 4,
+			slicedCols				: 6,	//if 0 the same value of cols
+			slicedRows				: 4,	//if 0 the same value of rows
+			// slideOn				: "",	//next, prev, random: decide if the transition effect will be applied to the current (prev) or the next slide
+			thumbnails				: 0,
+			time							: 7000,	//milliseconds between the end of the sliding effect and the start of the nex one
+			transPeriod				: 1500	//lenght of the sliding effect in milliseconds
+			// onEndTransition		: function() {  },	//this callback is invoked when the transition effect ends
+			// onLoaded					: function() {  },	//this callback is invoked when the image on a slide has completely loaded
+			// onStartLoading		: function() {  },	//this callback is invoked when the image on a slide start loading
+			// onStartTransition	: function() {  }	//this callback is invoked when the transition effect starts
+		});
+	});
+</script></div></div>
+</div>
+
+<div id="navigation" role="navigation">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+<nav class="moduletable menu"><div class="module_container">
+
+</div>

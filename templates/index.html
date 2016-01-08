@@ -1,0 +1,823 @@
+{%load staticfiles%}
+{%include 'navbar.html'%}
+<title>Home</title>
+<div class="icemegamenu">
+<div class="ice-megamenu-toggle">
+
+</div>
+
+
+<ul id="icemegamenu" class="meganizr mzr-slide mzr-responsive">
+<li id="iceMenu_101" class="iceMenuLiLevel_1">
+<a href="{%url 'homepage'%}" class="icemega_active iceMenuTitle " data-anchor="header">
+<span class="icemega_title icemega_nosubtitle">Home</span>
+</a>
+</li>
+<li id="iceMenu_134" class="iceMenuLiLevel_1 mzr-drop parent ">
+<a href="{%url 'aboutus'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">About Us</span>
+</a>
+<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+<li>
+<div style="float:left;width:280px" class="iceCols">
+<ul>
+<li id="iceMenu_135" class="iceMenuLiLevel_2 ">
+<a href="index.php/about/history.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Our Achievements</span>
+</a>
+</li>
+<li id="iceMenu_136" class="iceMenuLiLevel_2 mzr-drop parent ">
+<a href="index.php/about/team.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Our Services</span>
+</a>
+</li>
+<li id="iceMenu_133" class="iceMenuLiLevel_2 ">
+<a href="index.php/forum.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Gallery</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li id="iceMenu_139" class="iceMenuLiLevel_1 ">
+<a href="{%url 'location'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Help Animal</span>
+</a>
+</li>
+<li id="iceMenu_139" class="iceMenuLiLevel_1 ">
+<a href="{%url 'registerpet'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Missing Pet</span>
+</a>
+</li>
+<li id="iceMenu_239" class="iceMenuLiLevel_1 ">
+<a href="index.php/portfolio.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">FAQs</span>
+</a>
+</li>
+<li id="iceMenu_134" class="iceMenuLiLevel_1 mzr-drop parent ">
+<a class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Login/Register</span>
+</a>
+<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+<li>
+<div style="float:left;width:280px" class="iceCols">
+<ul>
+<li id="iceMenu_135" class="iceMenuLiLevel_2 ">
+<a href="{%url 'registerngo'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">NGOs</span>
+</a>
+</li>
+<li id="iceMenu_136" class="iceMenuLiLevel_2 mzr-drop parent ">
+<a href="{%url 'registervet'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Vets</span>
+</a>
+</li>
+<li id="iceMenu_133" class="iceMenuLiLevel_2 ">
+<a href="{%url 'otheruser'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Others</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li id="iceMenu_142" class="iceMenuLiLevel_1 ">
+<a href="{%url 'contactus'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Contact Us</span>
+</a>
+</li>
+</ul>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		var browser_width1 = jQuery(window).width();
+		jQuery("#icemegamenu").find(".icesubMenu").each(function(index){
+			var offset1 = jQuery(this).offset();
+			var xwidth1 = offset1.left + jQuery(this).width();
+			if(xwidth1 >= browser_width1){
+				jQuery(this).addClass("ice_righttoleft");
+			}
+		});
+
+	})
+	jQuery(window).resize(function() {
+		var browser_width = jQuery(window).width();
+		jQuery("#icemegamenu").find(".icesubMenu").removeClass("ice_righttoleft").each(function(index){
+			var offset = jQuery(this).offset();
+			var xwidth = offset.left + jQuery(this).width();
+			if(xwidth >= browser_width){
+				jQuery(this).addClass("ice_righttoleft");
+			}
+		});
+	});
+</script></div></nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="maintop">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="moduletable home_category  span12"><div class="module_container">
+<div class="mod-newsflash-adv mod-newsflash-adv__home_category cols-4" id="module_148">
+<div class="row-fluid">
+<article class="span3 item item_num0 item__module  " id="item_99">
+<div class="item_content">
+
+<figure class="item_img img-intro img-intro__none">
+<img src="{% static 'img/page1_img1.png' %}" alt="">
+</figure>
+
+<h5 class="item_title item_title__home_category">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">our</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half"></span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half item_title_part_last">awards</span></h5>
+
+<div class="item_introtext">
+<p>Dio dignissimos ducimus qui blanpraesentium volupttum deleniti atque corruptiquos dolores.</p>
+</div>
+
+<a class="btn btn-info readmore" href="index.php/41-home-category/99-our-awards.html"><span>Read more</span></a></div>
+<div class="clearfix"></div> </article>
+<article class="span3 item item_num1 item__module  " id="item_100">
+<div class="item_content">
+
+<figure class="item_img img-intro img-intro__none">
+<img src="{% static 'img/page1_img2.png' %}" alt="">
+</figure>
+
+<h5 class="item_title item_title__home_category">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Our</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">tips</span>
+</h5>
+
+<div class="item_introtext">
+<p>Egnissimos ducimus qui blanditiis praesen tatum deleniti atqueorrupti quos dolores et.</p>
+</div>
+
+<a class="btn btn-info readmore" href="index.php/41-home-category/100-our-tips.html"><span>Read more</span></a></div>
+<div class="clearfix"></div> </article>
+<article class="span3 item item_num2 item__module  " id="item_101">
+<div class="item_content">
+
+<figure class="item_img img-intro img-intro__none">
+<img src="{% static 'img/page1_img3.png' %}" alt="">
+</figure>
+
+<h5 class="item_title item_title__home_category">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">VETERINARY</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half"></span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half item_title_part_last">HELP</span></h5>
+
+<div class="item_introtext">
+<p>Edio dignissimos ducimus qui blanditiis deleniti atquepti quos dolores quas molestias excepturi.</p>
+</div>
+
+<a class="btn btn-info readmore" href="index.php/41-home-category/101-veterinary-help.html"><span>Read more</span></a></div>
+<div class="clearfix"></div> </article>
+<article class="span3 item item_num3 item__module  lastItem" id="item_102">
+<div class="item_content">
+
+<figure class="item_img img-intro img-intro__none">
+<img src="{% static 'img/page1_img4.png' %}" alt="">
+</figure>
+
+<h5 class="item_title item_title__home_category">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Care</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half"></span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half item_title_part_last">advice</span></h5>
+
+<div class="item_introtext">
+<p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolor.</p>
+</div>
+
+<a class="btn btn-info readmore" href="index.php/41-home-category/102-care-advice.html"><span>Read more</span></a></div>
+<div class="clearfix"></div> </article>
+</div>
+<div class="clearfix"></div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+ 
+<div id="content">
+<div class="row-container">
+<div class="container-fluid">
+<div class="content-inner row-fluid">
+<div id="component" class="span12">
+<main role="main">
+ 
+<div id="content-top-row" class="row-fluid">
+<div id="content-top">
+<div class="moduletable   span6">
+<div class="module_container">
+<header>
+<h3 class="moduleTitle title_1">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Find</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">Your</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half"></span>
+<span class="item_title_part_3 item_title_part_even item_title_part_second_half item_title_part_last">Lost Pets</span>
+</h3>
+</header>
+<div class="mod-article-single custom mod-article-single__" id="module_150">
+<div class="item__module" id="item_104">
+ 
+<figure class="item_img img-intro img-intro__">
+<a href="">
+<img src="{% static 'img/lost-pets.jpg' %}" alt="">
+</a>
+
+</figure>
+ 
+<h4 class="item-title">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Facility</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">to</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">find</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_first_half">your</span>
+<span class="item_title_part_4 item_title_part_odd item_title_part_first_half">pet</span>
+<span class="item_title_part_5 item_title_part_even item_title_part_first_half">if</span>
+<span class="item_title_part_6 item_title_part_odd item_title_part_first_half">goes</span>
+<span class="item_title_part_7 item_title_part_even item_title_part_second_half">missing.</span>
+<span class="item_title_part_8 item_title_part_odd item_title_part_second_half">Just</span>
+<span class="item_title_part_9 item_title_part_even item_title_part_second_half">upload</span>
+<span class="item_title_part_10 item_title_part_odd item_title_part_second_half">the</span>
+<span class="item_title_part_11 item_title_part_even item_title_part_second_half">necessary</span>
+<span class="item_title_part_12 item_title_part_odd item_title_part_second_half">information</span>
+<span class="item_title_part_13 item_title_part_even item_title_part_second_half item_title_part_last">required
+</span>
+</h4>
+ 
+<div class="item_introtext">
+<p> One of the services provided by us is that you can find your lost pet by uploading information regarding your pet.
+  Also you need to upload information regarding the owner which would help pet finders to track down your pet with the
+  help of the information provided by you.
+</p>
+<a class="btn btn-primary"
+   href="{%url 'registerpet'%}">
+  <span>Lost Pet
+  </span>
+</a>
+</div>
+
+<div class="clearfix"></div>
+</div>
+</div></div></div><div class="moduletable   span6">
+<div class="module_container">
+<header>
+<h3 class="moduleTitle title_1">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Register</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">Yourself</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half"></span>
+<span class="item_title_part_3 item_title_part_even item_title_part_second_half item_title_part_last">Here
+</span>
+</h3>
+</header>
+<div class="mod-article-single custom mod-article-single__" id="module_151">
+<div class="item__module" id="item_103">
+
+<figure class="item_img img-intro img-intro__">
+<a href="">
+<img src="{% static 'img/Register-Button1.jpg' %}" alt="">
+</a>
+</figure>
+ 
+<h4 class="item-title">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Provision</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">for</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">Veterinary</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_first_half">doctors</span>
+<span class="item_title_part_4 item_title_part_odd item_title_part_first_half">and</span>
+<span class="item_title_part_5 item_title_part_even item_title_part_first_half">NGOs</span>
+<span class="item_title_part_6 item_title_part_odd item_title_part_second_half">to</span>
+<span class="item_title_part_7 item_title_part_even item_title_part_second_half">register</span>
+<span class="item_title_part_8 item_title_part_odd item_title_part_second_half">themselves</span>
+<span class="item_title_part_9 item_title_part_even item_title_part_second_half">on</span>
+<span class="item_title_part_10 item_title_part_odd item_title_part_second_half">our</span>
+<span class="item_title_part_11 item_title_part_even item_title_part_second_half item_title_part_last">site.
+</span>
+</h4>
+ 
+<div class="item_introtext">
+<p>We provide NGOs and veterinarians to register themselves at our site. Your registration would aid in helping more
+  and more injured animals who are otherwise helpless. Information uploaded by you will be helpful for people who, on
+  finding an injured animal would look forward to seek your help
+</p>
+<a class="btn btn-primary"
+   href="{%url 'registerngo'%}">
+  <span>Register here
+  </span>
+</a>
+</div>
+
+<div class="clearfix"></div>
+</div>
+</div></div></div>
+</div>
+</div>
+<div id="system-message-container">
+</div>
+<section class="page-category page-category__home">
+</section>
+</main>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+<div id="mainbottom">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="moduletable information  span12">
+<div class="module_container">
+<div class="mod-article-single custom mod-article-single__information" id="module_152">
+<div class="item__module" id="item_105">
+ 
+<figure class="item_img img-intro img-intro__left">
+<a href="index.php/2-uncategorised/105-sed-ut-perspiciatis-unde-omnis-iste-natus-error-sit-voluptatem-accusantium-doloremque-laudantium-totam-rem-aperiam-eaque-">
+<img src="{% static 'img/volunteer.jpg' %}" alt="">
+</a>
+</figure>
+ 
+<h3 class="item-title">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Know</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">About</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">the</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_first_half">NGO</span>
+<span class="item_title_part_4 item_title_part_odd item_title_part_first_half">and</span>
+<span class="item_title_part_5 item_title_part_even item_title_part_first_half">Veterinarian</span>
+<span class="item_title_part_6 item_title_part_odd item_title_part_second_half">Services</span>
+<span class="item_title_part_7 item_title_part_even item_title_part_second_half">in</span>
+<span class="item_title_part_8 item_title_part_odd item_title_part_second_half">Your</span>
+<span class="item_title_part_9 item_title_part_even item_title_part_second_half">Immediate</span>
+<span class="item_title_part_10 item_title_part_odd item_title_part_second_half item_title_part_last">Vicinity</span>
+</h3>
+ 
+<div class="item_introtext">
+<h4>
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Help</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">an</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">injured</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_first_half">animal</span>
+<span class="item_title_part_4 item_title_part_odd item_title_part_first_half">around</span>
+<span class="item_title_part_5 item_title_part_even item_title_part_first_half">you.</span>
+<span class="item_title_part_6 item_title_part_odd item_title_part_first_half">Do</span>
+<span class="item_title_part_7 item_title_part_even item_title_part_first_half">not</span>
+<span class="item_title_part_8 item_title_part_odd item_title_part_first_half">ignore.</span>
+<span class="item_title_part_9 item_title_part_even item_title_part_first_half">Be</span>
+<span class="item_title_part_10 item_title_part_odd item_title_part_first_half">their</span>
+<span class="item_title_part_11 item_title_part_even item_title_part_second_half">voice.</span>
+<span class="item_title_part_12 item_title_part_odd item_title_part_second_half">Raise</span>
+<span class="item_title_part_13 item_title_part_even item_title_part_second_half">your</span>
+<span class="item_title_part_14 item_title_part_odd item_title_part_second_half">voice</span>
+<span class="item_title_part_15 item_title_part_even item_title_part_second_half">against</span>
+<span class="item_title_part_16 item_title_part_odd item_title_part_second_half">animal</span>
+<span class="item_title_part_17 item_title_part_even item_title_part_second_half">abuse</span>
+<span class="item_title_part_18 item_title_part_odd item_title_part_second_half">instead</span>
+<span class="item_title_part_19 item_title_part_even item_title_part_second_half">of</span>
+<span class="item_title_part_20 item_title_part_odd item_title_part_second_half">turning a</span>
+<span class="item_title_part_21 item_title_part_even item_title_part_second_half item_title_part_last">blind eye.</span>
+</h4>
+
+<p>Your passion for animals is well served by us. We provide you the details of the nearby NGOs and veterinary doctors
+  around your loaclity so that you can help an injured animal found by the roadside. The service is rendered just one
+  click-away!
+</p>
+
+<a class="btn btn-primary" href="{%url 'location'%}">
+<span>Help an Animal</span></a> </div>
+<div class="clearfix"></div>
+</div>
+</div></div></div><div class="moduletable   span12"><div class="module_container"><div class="joomimg143_main">
+<div class="gallery row-fluid cols-3">
+
+<div class="span12 gallery_3 gallery-item mix_all">
+<div class="gallery-item__container">
+<div class="joomimg143_img">
+<img src="{%static 'img/bird.jpe' %}" style="height:180px;width:390px;" /> </a></div>
+</div>
+</div>
+
+<div class="span12 gallery_3 gallery-item mix_all">
+<div class="gallery-item__container">
+<div class="joomimg143_img">
+<img src="{%static 'img/page1_img8.jpg' %}" style="height:180px;width:390px;"/> </a></div>
+</div>
+</div>
+
+<div class="span12 gallery_3 gallery-item mix_all">
+<div class="gallery-item__container">
+<div class="joomimg143_img">
+<img src="{%static 'img/cow.jpg' %}" style="height:180px;width:390px;"/> </a></div>
+</div>
+</div>
+
+<div class="span12 gallery_3 gallery-item mix_all">
+<div class="gallery-item__container">
+<div class="joomimg143_img">
+<img src="{%static 'img/goat.jpg' %}" style="height:180px;width:390px;"/> </a></div>
+</div>
+</div>
+
+<div class="span12 gallery_3 gallery-item mix_all">
+<div class="gallery-item__container">
+<div class="joomimg143_img">
+<img src="{%static 'img/buffalo.jpe' %}" style="height:180px;width:390px;"/> </a></div>
+</div>
+</div>
+
+<div class="span12 gallery_3 gallery-item mix_all">
+<div class="gallery-item__container">
+<img src="{%static 'img/dog-and-cat.jpg' %}" style="height:180px;width:390px;" /> </a></div>
+</div>
+</div>
+
+<div class="gap span12"></div>
+<div class="gap span12"></div>
+<div class="gap span12"></div>
+</div>
+</div>
+<script>
+  jQuery(function($){
+    var click = true;
+    function fancybox_init(){
+      $('a[data-thumbnail][data-fancybox="fancybox"]:visible').fancybox({
+        padding: 0,
+        margin: 0,
+        loop: true,
+        openSpeed:500,
+        closeSpeed:500,
+        nextSpeed:500,
+        prevSpeed:500,
+        afterLoad : function (){
+                    $('.fancybox-inner').click(function(){
+            if(click == true){
+              $('body').toggleClass('fancybox-full');
+            }
+          })
+        },
+        beforeShow: function() {
+          $('body').addClass('fancybox-lock');
+        },
+        afterClose : function() {
+          $('body').removeClass('fancybox-lock');
+                  },
+        tpl : {
+          image    : '<div class="fancybox-image" style="background-image: url(\'{href}\');"></div>'
+        },
+        helpers: {
+          title : null,
+          thumbs: {
+            height: 50,
+            width: 80,
+            source: function(current) {
+              return $(current.element).data('thumbnail');
+            }
+          },
+          overlay : {
+            css : {
+              'background' : '#191919'
+            }
+          }
+        }
+      });
+    }
+    fancybox_init();
+    $(window).load(function(){
+      var $container = $('.joomimg143_main .gallery');
+      $container.mixitup({
+        targetSelector: '.gallery-item',
+        filterSelector: '.filter',
+        buttonEvent: 'click',
+        effects: ['fade','scale','rotateZ'],
+        listEffects: null,
+        easing: 'smooth',
+        layoutMode: 'grid',
+        targetDisplayGrid: 'inline-block',
+        targetDisplayList: 'block',
+        gridClass: 'grid',
+        listClass: 'list',
+        transitionSpeed: 600,
+        showOnLoad: 'all',
+        sortOnLoad: false,
+        multiFilter: false,
+        filterLogic: 'or',
+        resizeContainer: true,
+        minHeight: 0,
+        failClass: 'fail',
+        perspectiveDistance: '3000',
+        perspectiveOrigin: '50% 50%',
+        animateGridList: true,
+        onMixLoad: function(){
+          $container.addClass('loaded');
+        },
+        onMixEnd: function(config){
+          if(typeof $.fn.lazy == "function"){
+            $("img.lazy:visible").lazy({
+              bind: "event",
+              threshold: 0,
+              visibleOnly: false,
+              effect: "fadeIn",
+              effectTime: 500,
+              enableThrottle: true,
+              throttle: 500,
+              afterLoad: function(element) {
+                if(typeof $.fn.BlackAndWhite_init == "function"){
+                  jQuery(element).parents(".item_img a .lazy_container").BlackAndWhite_init();
+                }
+              }
+            });
+          }
+          fancybox_init();
+        }
+      })
+   });
+}); 
+</script></div></div>
+</div>
+</div>
+</div>
+</div>
+ 
+<div id="bottom">
+<div class="moduletable ">
+  <div class="module_container">
+    <header>
+      <h3 class="moduleTitle ">
+        <span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">We</span>
+        <span class="item_title_part_1 item_title_part_even item_title_part_first_half">provide</span>
+        <span class="item_title_part_2 item_title_part_odd item_title_part_first_half">care</span>
+        <span class="item_title_part_3 item_title_part_even item_title_part_first_half">that</span>
+        <span class="item_title_part_4 item_title_part_odd item_title_part_second_half">your</span>
+        <span class="item_title_part_5 item_title_part_even item_title_part_second_half">dog</span>
+        <span class="item_title_part_6 item_title_part_odd item_title_part_second_half item_title_part_last">deserves!</span>
+      </h3>
+    </header>
+    <div class="mod-article-single mod-article-single__" id="module_153">
+<div class="item__module" id="item_106">
+ 
+<h4 class="item-title">
+  <span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Your</span>
+  <span class="item_title_part_1 item_title_part_even item_title_part_first_half">dog</span>
+  <span class="item_title_part_2 item_title_part_odd item_title_part_first_half">will</span>
+  <span class="item_title_part_3 item_title_part_even item_title_part_first_half">be</span>
+  <span class="item_title_part_4 item_title_part_odd item_title_part_second_half">grateful</span>
+  <span class="item_title_part_5 item_title_part_even item_title_part_second_half">to</span>
+  <span class="item_title_part_6 item_title_part_odd item_title_part_second_half item_title_part_last">you!</span>
+</h4>
+ 
+<div class="item_introtext">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehe.nderit in voluptate velit esse cillum dolore eu fugiat.</p> </div>
+</div>
+</div></div></div>
+</div>
+ 
+<div id="footer">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="moduletable newsletter  span12">
+  <div class="module_container">
+    <header><h3 class="moduleTitle "><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Subscribe</span> <span class="item_title_part_1 item_title_part_even item_title_part_first_half">to</span> <span class="item_title_part_2 item_title_part_odd item_title_part_second_half">our</span> <span class="item_title_part_3 item_title_part_even item_title_part_second_half item_title_part_last">newsletter</span></h3></header><div class="acymailing_modulenewsletter" id="acymailing_module_formAcymailing24721">
+<div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing24721" style="text-align:left">
+<form id="formAcymailing24721" action="http://livedemo00.template-help.com/joomla_55099/index.php" onsubmit="return submitacymailingform('optin','formAcymailing24721')" method="post" name="formAcymailing24721">
+<div class="acymailing_module_form">
+<div class="acymailing_introtext">and get the latest news and updates</div> <table class="acymailing_form">
+<tr>
+<td class="acyfield_email acy_requiredField">
+<input id="user_email_formAcymailing24721" onfocus="if(this.value == 'Your E-Mail') this.value = '';" onblur="if(this.value=='') this.value='Your E-Mail';" class="inputbox" type="text" name="user[email]" style="width:100%" value="Your E-Mail" title="Your E-Mail"/>
+</td>
+<td class="acysubbuttons">
+<input class="button subbutton btn btn-primary" type="submit" value="submit" name="Submit" onclick="try{ return submitacymailingform('optin','formAcymailing24721'); }catch(err){alert('The form could not be submitted '+err);return false;}"/>
+</td>
+</tr>
+</table>
+<input type="hidden" name="ajax" value="1"/>
+<input type="hidden" name="acy_source" value="module_116"/>
+<input type="hidden" name="ctrl" value="sub"/>
+<input type="hidden" name="task" value="notask"/>
+<input type="hidden" name="redirect" value="http%3A%2F%2Flivedemo00.template-help.com%2Fjoomla_55099%2F"/>
+<input type="hidden" name="redirectunsub" value="http%3A%2F%2Flivedemo00.template-help.com%2Fjoomla_55099%2F"/>
+<input type="hidden" name="option" value="com_acymailing"/>
+<input type="hidden" name="hiddenlists" value="2"/>
+<input type="hidden" name="acyformname" value="formAcymailing24721"/>
+</div>
+</form>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div id="push"></div>
+</div>
+</div>
+<div id="footer-wrapper">
+<div class="footer-wrapper-inner">
+ 
+<div id="copyright" role="contentinfo">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="copyright span8">
+<span class="siteName">Dogs Club</span>
+<span class="copy">&copy;</span> <span class="year">2015</span> <a class="privacy_link" rel="license" href="index.php/privacy-policy.html">Privacy policy</a>
+</div>
+<div class="moduletable   span4"><div class="module_container"><header><h5 class="moduleTitle title"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">FACEBOOK</span> <span class="item_title_part_1 item_title_part_even item_title_part_first_half">LIKE</span> <span class="item_title_part_2 item_title_part_odd item_title_part_second_half item_title_part_last">BOX</span></h5></header><div id="tm_facebook_page_plugin_140" class="tm_facebook_page_plugin_">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../connect.facebook.net/en-GB/sdk.js#xfbml=1&version=v2.3&appId=930899133604868";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><div class="fb-page" data-href="https://www.facebook.com/facebook" data-hide-cover="0" data-show-facepile="1" data-width="" data-height="" data-show-posts="0"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div></div>
+<script>
+	;(function ($) {
+        var o = $('.fb-page');
+
+        $(window).load(function () {
+            o.css({'display': 'block'})
+                .find('span').css({
+                    'width': '100%',
+                    'display': 'block',
+                    'text-align': 'inherit'
+                })
+                .find('iframe').css({
+                    'display': 'inline-block',
+                    'position': 'static'
+                });
+        });
+
+        $(window).on('load resize', function () {
+            if (o.parent().width() < o.find('iframe').width()) {
+                o.find('iframe').css({
+                    'transform': 'scale(' + (o.width() / o.find('iframe').width()) + ')',
+                    'transform-origin': '0% 0%'
+                })
+                    .parent().css({
+                        'height': (o.find('iframe').height() * (o.width() / o.find('iframe').width())) + 'px'
+                    });
+            } else {
+                o
+                    .find('span').css({
+                        'height': o.find('iframe').height()
+                    })
+                    .find('iframe').css({
+                        'transform': 'none'
+                    });
+            }
+        });
+    })(jQuery);
+</script></div></div><div class="moduletable social_menu  span2"><div class="module_container"><div class="mod-menu">
+<ul class="nav menu social">
+<li class="item-148"><a class="fa fa-tumblr-square" href="#" title="tumblr">Tumblr</a>
+</li><li class="item-149"><a class="fa fa-facebook-square" href="#" title="facebook">Facebook</a>
+</li><li class="item-150"><a class="fa fa-youtube" href="#" title="Youtube">You Tube</a>
+</li> </ul>
+</div></div></div><div class="moduletable  bordered  span3"><div class="module_container"><header><h5 class="moduleTitle fa fa-phone-square"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">TELEPHONES</span></h5></header><div class="mod-menu">
+<ul class="nav menu ">
+<li class="item-332"><span class="separator">+1 800 603 6035</span></li><li class="item-333"><span class="separator">+1 800 603 0587</span></li> </ul>
+</div></div></div><div class="moduletable  bordered mail  span3"><div class="module_container"><header><h5 class="moduleTitle fa fa-envelope"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">E-Mail</span> <span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">Us</span></h5></header><div class="mod-menu">
+<ul class="nav menu ">
+<li class="item-334"><a href="http://livedemo00.template-help.com/cdn-cgi/l/email-protection#7e131f17123e1a1b13111217101550110c19"><span class="__cf_email__" data-cfemail="224f434b4e6246474f4d4e4b4c490c4d5045">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a>
+</li><li class="item-335"><a href="http://livedemo00.template-help.com/cdn-cgi/l/email-protection#bad7dbd3d6fadedfd7d5d6d3d4d194d5c8dd"><span class="__cf_email__" data-cfemail="57343839233634231733323a383b3e393c79382530">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a>
+</li> </ul>
+</div></div></div>
+ 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="back-top">
+<a href="#"><span></span> </a>
+</div>
+<div id="modal" class="modal hide fade loginPopup">
+<div class="modal-hide"></div>
+<div class="modal_wrapper">
+<button type="button" class="close modalClose">×</button>
+<div class="moduletable "><div class="modal-header"><header><h3 class=""><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Login</span> <span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">form</span></h3></header></div><div class="modal-body">
+<div class="lr_social_login_basic_150">
+<div class="lr_providers">
+<div class="lr_icons_box"><div>
+<a class="lr_providericons lr_facebook" href="javascript:void(0);" onclick="javascript:window.open('http://www.facebook.com/dialog/oauth?client_id=296188807244109&amp;redirect_uri=http://livedemo00.template-help.com/joomla_55099/?provider=facebook&amp;display=popup&amp;scope=email,user_photos,user_about_me,user_hometown,user_photos','Facebook','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400px,height=400px');" rel="nofollow" title="Login with Facebook">Login with Facebook</a>
+</div><div>
+<a class="lr_providericons lr_google" href="javascript:void(0);" onclick="javascript:window.open('https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=http://livedemo00.template-help.com/joomla_55099/?provider=google&amp;client_id=4ea43331a8b16c6ddb33685fc03635a8&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email','Google','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400px,height=400px');" rel="nofollow" title="Login with Google">Login with Google</a>
+</div></div>
+</div>
+</div></div></div><div class="moduletable olark"><div class="modal-body">
+ 
+<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('5615-604-10-1042');/*]]>*/</script>
+ </div></div><div class="moduletable "><div class="modal-body"><div class="mod-login mod-login__">
+<form action="http://livedemo00.template-help.com/joomla_55099/index.php" method="post" id="login-form-16" class="form-inline">
+<div class="mod-login_userdata">
+<div id="form-login-username-16" class="control-group">
+<div class="controls">
+<input id="mod-login_username-16" class="inputbox mod-login_username" type="text" name="username" tabindex="1" size="18" placeholder="User name" required>
+</div>
+</div>
+<div id="form-login-password-16" class="control-group">
+<div class="controls">
+<input id="mod-login_passwd-16" class="inputbox mod-login_passwd" type="password" name="password" tabindex="2" size="18" placeholder="Password" required>
+</div>
+</div>
+<label for="mod-login_remember-16" class="checkbox">
+<input id="mod-login_remember-16" class="mod-login_remember" type="checkbox" name="remember" value="yes">
+Remember me </label>
+<div class="mod-login_submit">
+<button type="submit" tabindex="3" name="Submit" class="btn btn-primary">Log in</button>
+</div>
+<ul class="unstyled">
+<li><a href="index.php/username-reminder-request.html" class="" title="Forgot your username?">Forgot your username?</a></li>
+<li><a href="index.php/password-reset.html" class="" title="Forgot your password?">Forgot your password?</a></li>
+<li><a href="index.php/user-registration.html">Create an account</a></li>
+</ul>
+<input type="hidden" name="option" value="com_users">
+<input type="hidden" name="task" value="user.login">
+<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZ2aWV3PWNhdGVnb3J5JmxheW91dD10aGVtZTMxNDQ6Y2F0ZWdvcnkmaWQ9OA==">
+<input type="hidden" name="3d7c7d6f5ed87d3e6cadbbafd9f00394" value="1"/> </div>
+</form>
+</div></div></div>
+</div>
+</div>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script>
+      jQuery(function($) {
+        $(window).load(function(){
+          $.stellar({responsive: true,horizontalScrolling: false});
+        });
+      });
+    </script>
+<script src="{% static 'js/jquery.simplr.smoothscroll.min.js' %}"></script>
+<script src="{% static 'js/jquery.BlackAndWhite.min.js' %}"></script>
+<script>
+      ;(function($, undefined) {
+      $.fn.BlackAndWhite_init = function () {
+        var selector = $(this);
+        selector.find('img').not(".slide-img").parent().BlackAndWhite({
+          invertHoverEffect: ".$this->params->get('invertHoverEffect').",
+          intensity: 1,
+          responsive: true,
+          speed: {
+              fadeIn: ".$this->params->get('fadeIn').",
+              fadeOut: ".$this->params->get('fadeOut')." 
+          }
+        });
+      }
+      })(jQuery);
+      jQuery(window).load(function($){
+        jQuery('.item_img a').find('img').not('.lazy').parent().BlackAndWhite_init();
+      });
+    </script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox-buttons.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox-thumbs.js' %}"></script>
+<script src="{% static 'js/jquery.pep.js' %}"></script>
+<script src="{% static 'js/jquery.vide.min.js' %}"></script>
+<script src="{% static 'js/autosize.min.js' %}"></script>
+<script src="{% static 'js/scripts.js' %}"></script>
+<script type="text/javascript">/* CloudFlare analytics upgrade */
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"72d7dcce33","applicationID":"1388850","transactionName":"ZV1TZ0FTVkFVWkwKXlwXcFBHW1dcG3pXDUVXVkVwXFxMQFtVVAZDHVxYQENeWUs=","queueTime":0,"applicationTime":2232,"atts":"SRpQEQlJRU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+
+<!-- Mirrored from livedemo00.template-help.com/joomla_55099/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Sep 2015 18:41:15 GMT -->
+</html>

@@ -1,13 +1,170 @@
+{%load staticfiles%}
+{%include 'navbar.html'%}
+{%load crispy_forms_tags%}
+<title>Register User</title>
+<div class="icemegamenu">
+<div class="ice-megamenu-toggle">
 
-<html>
-	<head>
-		<title>Registration</title>
-	</head>
-	<body>
-        <h1>User Register</h1>
-		    <form method="POST" action="/registeruser/">{%csrf_token%}
-				{{form.as_p}}
-			    <input type="submit" value="Submit"/>
+</div>
+
+
+<ul id="icemegamenu" class="meganizr mzr-slide mzr-responsive">
+<li id="iceMenu_101" class="iceMenuLiLevel_1">
+<a href="{%url 'homepage'%}" class="iceMenuTitle " data-anchor="header">
+<span class="icemega_title icemega_nosubtitle">Home</span>
+</a>
+</li>
+<li id="iceMenu_134" class="iceMenuLiLevel_1 mzr-drop parent ">
+<a href="{%url 'aboutus'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">About Us</span>
+</a>
+<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+<li>
+<div style="float:left;width:280px" class="iceCols">
+<ul>
+<li id="iceMenu_135" class="iceMenuLiLevel_2 ">
+<a href="index.php/about/history.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Our Achievements</span>
+</a>
+</li>
+<li id="iceMenu_136" class="iceMenuLiLevel_2 mzr-drop parent ">
+<a href="index.php/about/team.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Our Services</span>
+</a>
+</li>
+<li id="iceMenu_133" class="iceMenuLiLevel_2 ">
+<a href="index.php/forum.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Gallery</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li id="iceMenu_139" class="iceMenuLiLevel_1 ">
+<a href="{%url 'location'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Help Animal</span>
+</a>
+</li>
+<li id="iceMenu_139" class="iceMenuLiLevel_1 ">
+<a href="{%url 'registerpet'%}" class="icemega_active iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Missing Pet</span>
+</a>
+</li>
+<li id="iceMenu_239" class="iceMenuLiLevel_1 ">
+<a href="index.php/portfolio.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">FAQs</span>
+</a>
+</li>
+<li id="iceMenu_134" class="iceMenuLiLevel_1 mzr-drop parent ">
+<a class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Login/Register</span>
+</a>
+<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+<li>
+<div style="float:left;width:280px" class="iceCols">
+<ul>
+<li id="iceMenu_135" class="iceMenuLiLevel_2 ">
+<a href="{%url 'registerngo'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">NGOs</span>
+</a>
+</li>
+<li id="iceMenu_136" class="iceMenuLiLevel_2 mzr-drop parent ">
+<a href="{%url 'registervet'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Vets</span>
+</a>
+</li>
+<li id="iceMenu_133" class="iceMenuLiLevel_2 ">
+<a href="{%url 'otheruser'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Others</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li id="iceMenu_142" class="iceMenuLiLevel_1 ">
+<a href="{%url 'contactus'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Contact Us</span>
+</a>
+</li>
+</ul>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		var browser_width1 = jQuery(window).width();
+		jQuery("#icemegamenu").find(".icesubMenu").each(function(index){
+			var offset1 = jQuery(this).offset();
+			var xwidth1 = offset1.left + jQuery(this).width();
+			if(xwidth1 >= browser_width1){
+				jQuery(this).addClass("ice_righttoleft");
+			}
+		});
+
+	})
+	jQuery(window).resize(function() {
+		var browser_width = jQuery(window).width();
+		jQuery("#icemegamenu").find(".icesubMenu").removeClass("ice_righttoleft").each(function(index){
+			var offset = jQuery(this).offset();
+			var xwidth = offset.left + jQuery(this).width();
+			if(xwidth >= browser_width){
+				jQuery(this).addClass("ice_righttoleft");
+			}
+		});
+	});
+</script></div></nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="maintop">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="moduletable home_category  span12"><div class="module_container">
+<div class="mod-newsflash-adv mod-newsflash-adv__home_category cols-4" id="module_148">
+<div class="row-fluid">
+<article class="span3 item item_num0 item__module  " id="item_99">
+<div class="item_content">
+<div class="clearfix"></div> </article>
+</div>
+<div class="clearfix"></div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="content">
+<div class="row-container">
+<div class="container-fluid">
+<div class="content-inner row-fluid">
+<div id="component" class="span12">
+<main role="main">
+<div id="content-top-row" class="row-fluid">
+<div id="content-top">
+<div class="moduletable   span6"><div class="module_container"><header><h3 class="moduleTitle title_1"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">User</span> <span class="item_title_part_1 item_title_part_even item_title_part_first_half">Registration</span></h3></header><div class="mod-article-single custom mod-article-single__" id="module_150">
+
+	<form method="POST" action="/registeruser/">{%csrf_token%}
+				{{form|crispy}}
+			    <input class='btn btn-primary' type="submit" value="Submit"/>
 		    </form>
-	</body>
-</html>
+</div>
+</div>
+<div id="system-message-container">
+</div>
+<section class="page-category page-category__home">
+</section>
+</main>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+

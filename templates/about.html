@@ -1,0 +1,745 @@
+{%load staticfiles%}
+{%include 'navbar.html'%}
+<title>About Us</title>
+<div class="icemegamenu">
+<div class="ice-megamenu-toggle">
+
+</div>
+
+
+<ul id="icemegamenu" class="meganizr mzr-slide mzr-responsive">
+<li id="iceMenu_101" class="iceMenuLiLevel_1">
+<a href="{%url 'homepage'%}" class="iceMenuTitle " data-anchor="header">
+<span class="icemega_title icemega_nosubtitle">Home</span>
+</a>
+</li>
+<li id="iceMenu_134" class="iceMenuLiLevel_1 mzr-drop parent ">
+<a href="{%url 'aboutus'%}" class="icemega_active iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">About Us</span>
+</a>
+<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+<li>
+<div style="float:left;width:280px" class="iceCols">
+<ul>
+<li id="iceMenu_135" class="iceMenuLiLevel_2 ">
+<a href="index.php/about/history.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Our Achievements</span>
+</a>
+</li>
+<li id="iceMenu_136" class="iceMenuLiLevel_2 mzr-drop parent ">
+<a href="index.php/about/team.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Our Services</span>
+</a>
+</li>
+<li id="iceMenu_133" class="iceMenuLiLevel_2 ">
+<a href="index.php/forum.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Gallery</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li id="iceMenu_139" class="iceMenuLiLevel_1 ">
+<a href="{%url 'location'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Help Animal</span>
+</a>
+</li>
+<li id="iceMenu_139" class="iceMenuLiLevel_1 ">
+<a href="{%url 'registerpet'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Missing Pet</span>
+</a>
+</li>
+<li id="iceMenu_239" class="iceMenuLiLevel_1 ">
+<a href="index.php/portfolio.html" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">FAQs</span>
+</a>
+</li>
+<li id="iceMenu_134" class="iceMenuLiLevel_1 mzr-drop parent ">
+<a class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Login/Register</span>
+</a>
+<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+<li>
+<div style="float:left;width:280px" class="iceCols">
+<ul>
+<li id="iceMenu_135" class="iceMenuLiLevel_2 ">
+<a href="{%url 'registerngo'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">NGOs</span>
+</a>
+</li>
+<li id="iceMenu_136" class="iceMenuLiLevel_2 mzr-drop parent ">
+<a href="{%url 'registervet'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Vets</span>
+</a>
+</li>
+<li id="iceMenu_133" class="iceMenuLiLevel_2 ">
+<a href="{%url 'otheruser'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Others</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li id="iceMenu_142" class="iceMenuLiLevel_1 ">
+<a href="{%url 'contactus'%}" class=" iceMenuTitle ">
+<span class="icemega_title icemega_nosubtitle">Contact Us</span>
+</a>
+</li>
+</ul>
+</div>
+
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		var browser_width1 = jQuery(window).width();
+		jQuery("#icemegamenu").find(".icesubMenu").each(function(index){
+			var offset1 = jQuery(this).offset();
+			var xwidth1 = offset1.left + jQuery(this).width();
+			if(xwidth1 >= browser_width1){
+				jQuery(this).addClass("ice_righttoleft");
+			}
+		});
+		
+	})
+	jQuery(window).resize(function() {
+		var browser_width = jQuery(window).width();
+		jQuery("#icemegamenu").find(".icesubMenu").removeClass("ice_righttoleft").each(function(index){
+			var offset = jQuery(this).offset();
+			var xwidth = offset.left + jQuery(this).width();
+			if(xwidth >= browser_width){
+				jQuery(this).addClass("ice_righttoleft");
+			}
+		});
+	});
+</script>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Maintop -->
+<div id="maintop">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="moduletable awards  span12">
+<div class="module_container">
+<header><h3 class="moduleTitle ">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Our</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">Awards</span>
+</h3>
+</header>
+<div class="mod-newsflash-adv droplist mod-newsflash-adv__awards cols-3" id="module_155">
+<div class="row-fluid">
+<article class="span4 item item_num0 item__module  " id="item_108">
+<span class="dropcap">1.</span>
+    
+<div class="item_content">
+<!-- Item title -->
+<h4 class="item_title item_title__awards">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Sed</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">porttitor</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half">felis</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_second_half item_title_part_last">non</span>
+</h4>
+<!-- Introtext -->
+<div class="item_introtext">
+<p>Fusce id est ex. Phasellus consectetur aliquam lacus, vel accumsan elit. Duis et erat fermentum, egestas orci vel,
+	felis. Phasellus tempus .
+</p>
+</div>
+<!-- Read More link -->
+<a class="btn btn-info readmore" href="about/46-our-awards/109-felis-non-congue-felis.html">
+<span>Read more</span>
+</a>
+</div>
+<div class="clearfix"></div>  </article>
+<article class="span4 item item_num1 item__module  " id="item_109">
+<span class="dropcap">2.</span>
+    
+<div class="item_content">
+<!-- Item title -->
+<h4 class="item_title item_title__awards">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">felis</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">non</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half">congue</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_second_half item_title_part_last">felis</span>
+</h4>
+<!-- Introtext -->
+<div class="item_introtext">
+<p>Quisque nunc ante, rhoncus id placerat vel, imperd iet ac diam. Suspendisse id placerat urna, ut malesua praesent hendrerit nunc id.</p>
+</div>
+	
+<!-- Read More link -->
+<a class="btn btn-info readmore" href="about/46-our-awards/109-felis-non-congue-felis.html"><span>Read more</span></a></div>
+<div class="clearfix"></div>  </article>
+<article class="span4 item item_num2 item__module  lastItem" id="item_110">
+<span class="dropcap">3.</span>
+    
+<div class="item_content">
+<!-- Item title -->
+<h4 class="item_title item_title__awards">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Fusce</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">a</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half">nibh</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_second_half item_title_part_last">tincidunt</span>
+</h4>
+<!-- Introtext -->
+<div class="item_introtext">
+<p>Nulla condimentum volutpat magna laoreet volutp odio erat tempor justo, ac tempus elit urna eget eros. Duis elementum dui id.</p>
+</div>
+	
+<!-- Read More link -->
+<a class="btn btn-info readmore" href="about/46-our-awards/110-fusce-a-nibh-tincidunt.html">
+<span>Read more</span>
+</a>
+</div>
+<div class="clearfix"></div>  </article>
+</div>
+<div class="clearfix"></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content row -->
+<div id="content">
+<div class="row-container">
+<div class="container-fluid">
+<div class="content-inner row-fluid">
+<div id="component" class="span12">
+<main role="main">
+<!-- Content-top -->
+<div id="content-top-row" class="row-fluid">
+<div id="content-top">
+<div class="moduletable we_are  span12">
+<div class="module_container">
+<header>
+<h3 class="moduleTitle ">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Who</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">We</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half item_title_part_last">Are</span>
+</h3>
+</header>
+<div class="mod-article-single custom mod-article-single__we_are" id="module_154">
+<div class="item__module" id="item_107">
+<!-- Intro Image -->
+<figure class="item_img img-intro img-intro__left">
+<a href="about/2-uncategorised/107-quisque-nunc-ante-rhoncus-id-placerat-vel-imperdiet-ac-diam-suspendisse-id-placerat-urna-ut-malesuada-tellus-praese">
+<img src="{%static 'img/page2_img1.jpg' %}" alt="">
+</a>
+</figure>
+<!-- Item Title -->
+<h4 class="item-title"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Quisque</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">nunc</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">ante,</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_first_half">rhoncus</span>
+<span class="item_title_part_4 item_title_part_odd item_title_part_first_half">id</span>
+<span class="item_title_part_5 item_title_part_even item_title_part_first_half">placerat</span>
+<span class="item_title_part_6 item_title_part_odd item_title_part_first_half">vel,</span>
+<span class="item_title_part_7 item_title_part_even item_title_part_first_half">imperdiet</span>
+<span class="item_title_part_8 item_title_part_odd item_title_part_first_half">ac</span>
+<span class="item_title_part_9 item_title_part_even item_title_part_first_half">diam.</span>
+<span class="item_title_part_10 item_title_part_odd item_title_part_first_half">Suspendisse</span>
+<span class="item_title_part_11 item_title_part_even item_title_part_first_half">id</span>
+<span class="item_title_part_12 item_title_part_odd item_title_part_second_half">placerat</span>
+<span class="item_title_part_13 item_title_part_even item_title_part_second_half"></span>
+<span class="item_title_part_14 item_title_part_odd item_title_part_second_half">urna,</span>
+<span class="item_title_part_15 item_title_part_even item_title_part_second_half">ut</span>
+<span class="item_title_part_16 item_title_part_odd item_title_part_second_half">malesuada</span>
+<span class="item_title_part_17 item_title_part_even item_title_part_second_half">tellus.</span>
+<span class="item_title_part_18 item_title_part_odd item_title_part_second_half">Praesent</span>
+<span class="item_title_part_19 item_title_part_even item_title_part_second_half">hendrerit</span>
+<span class="item_title_part_20 item_title_part_odd item_title_part_second_half">nunc</span>
+<span class="item_title_part_21 item_title_part_even item_title_part_second_half">id</span>
+<span class="item_title_part_22 item_title_part_odd item_title_part_second_half">commodo</span>
+<span class="item_title_part_23 item_title_part_even item_title_part_second_half item_title_part_last">rutrum.</span>
+</h4>
+<!-- Intro Text -->
+<div class="item_introtext">
+<p>Quisque nunc ante, rhoncus id placerat vel, imperdiet ac diam. Suspendisse id placerat urna, ut malesuada tellus.
+	Praesent Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent
+	aliquam est vel erat finibus, ut fermentum leo ornare. Duis sollicitudin, ex a accumsan ullamcorper, sapien purus
+	accumsan risus, sed lacinia mauris congue porttitor. Fusce varius, enim laoreet porta porttitor, augue massa gravida
+	ante, fringilla aliquet tellus dui sed lorem. Pellentesque habitant morbi tristique senectus.
+</p>
+
+<a class="btn btn-info readmore" href="about/2-uncategorised/107-quisque-nunc-ante-rhoncus-id-placerat-vel-imperdiet
+	-ac-diam-suspendisse-id-placerat-urna-ut-malesuada-tellus-praese">
+	<span>Read more</span>
+</a>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="system-message-container">
+</div>
+
+<section class="page-category page-category__about">
+</section>
+</main>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mainbottom -->
+<div id="mainbottom">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="moduletable   span12">
+<div class="module_container">
+<header>
+<h3 class="moduleTitle ">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Why</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">Choose</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half item_title_part_last">Us</span>
+</h3></header><div class="mod-newsflash-adv mod-newsflash-adv__ cols-2" id="module_156">
+<div class="row-fluid">
+<article class="span6 item item_num0 item__module  " id="item_111">
+
+<div class="item_content">
+<!-- Intro Image -->
+<figure class="item_img img-intro img-intro__left"> 
+<a href="about/47-why-choose-us/111-cumque-nihil-impeditquo-minus-id-quod-maxime-placeat.html">
+<img src="{%static 'img/page2_img2.jpg' %}" alt="">
+</a>
+</figure>
+<!-- Item title -->
+<h4 class="item_title item_title__"><a href="about/47-why-choose-us/111-cumque-nihil-impeditquo-minus-id-quod-maxime-placeat.html"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Cumque</span> <span class="item_title_part_1 item_title_part_even item_title_part_first_half">nihil</span> <span class="item_title_part_2 item_title_part_odd item_title_part_first_half">impeditquo</span> <span class="item_title_part_3 item_title_part_even item_title_part_first_half">minus</span> <span class="item_title_part_4 item_title_part_odd item_title_part_first_half"></span> <span class="item_title_part_5 item_title_part_even item_title_part_second_half">id</span> <span class="item_title_part_6 item_title_part_odd item_title_part_second_half">quod</span> <span class="item_title_part_7 item_title_part_even item_title_part_second_half">maxime</span> <span class="item_title_part_8 item_title_part_odd item_title_part_second_half item_title_part_last">placeat.</span></a></h4>
+<!-- Introtext -->
+<div class="item_introtext">
+<p>Vivamus tortor lorem, iaculis et scelerisblandit eu tortor id, rhoncus bibendum nisl. Mauris elementum, est id
+	euismod tristique, nisi neque imperdiet nisi, ac tincidunt enim elit in nunc.
+</p>
+
+</div>
+
+
+<!-- Read More link -->
+</div>
+<div class="clearfix"></div>  </article>
+<article class="span6 item item_num1 item__module  " id="item_112">
+
+<div class="item_content">
+<!-- Intro Image -->
+<figure class="item_img img-intro img-intro__left"> 
+<a href="about/47-why-choose-us/112-morbi-fermentum-nunc-sit-amet-volutpat-facilisis-dui.html">
+<img src="{%static 'img/page2_img3.jpg' %}" alt="">
+</a>
+</figure>
+<!-- Item title -->
+<h4 class="item_title item_title__">
+<a href="about/47-why-choose-us/112-morbi-fermentum-nunc-sit-amet-volutpat-facilisis-dui.html">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Morbi</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">fermentum,</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">nunc</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_first_half">sit</span>
+<span class="item_title_part_4 item_title_part_odd item_title_part_first_half">amet</span>
+<span class="item_title_part_5 item_title_part_even item_title_part_second_half"></span>
+<span class="item_title_part_6 item_title_part_odd item_title_part_second_half">volutpat</span>
+<span class="item_title_part_7 item_title_part_even item_title_part_second_half">facilisis,</span>
+<span class="item_title_part_8 item_title_part_odd item_title_part_second_half item_title_part_last">dui.</span></a></h4>
+<!-- Introtext -->
+<div class="item_introtext">
+<p>Quisque nunc ante, rhoncus id placerat vel, imperdiet ac diam. Suspendisse id rutrum. Aliquam pretium in dolor quis
+	morbi tristique senectus et netus et male ac turpis egestas.
+</p>
+
+</div>
+
+
+<!-- Read More link -->
+</div>
+<div class="clearfix"></div>  </article>
+</div><div class="row-fluid">  <article class="span6 item item_num2 item__module  " id="item_113">
+
+<div class="item_content">
+<!-- Intro Image -->
+<figure class="item_img img-intro img-intro__left"> 
+<a href="about/47-why-choose-us/113-praesent-ac-felis-dapibus-mattis-enim-ut-eleifend-velit.html">
+<img src="{%static 'img/page2_img4.jpg' %}" alt="">
+</a>
+</figure>
+<!-- Item title -->
+<h4 class="item_title item_title__">
+<a href="about/47-why-choose-us/113-praesent-ac-felis-dapibus-mattis-enim-ut-eleifend-velit.html">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Praesent</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">ac</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">felis</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_first_half">dapibus,</span>
+<span class="item_title_part_4 item_title_part_odd item_title_part_first_half">mattis</span>
+<span class="item_title_part_5 item_title_part_even item_title_part_second_half"></span>
+<span class="item_title_part_6 item_title_part_odd item_title_part_second_half">enim</span>
+<span class="item_title_part_7 item_title_part_even item_title_part_second_half">ut,</span>
+<span class="item_title_part_8 item_title_part_odd item_title_part_second_half">eleifend</span>
+<span class="item_title_part_9 item_title_part_even item_title_part_second_half item_title_part_last">velit.</span>
+</a>
+</h4>
+<!-- Introtext -->
+<div class="item_introtext">
+<p>Aliquam pretium in dolor quis cursus. fames ac turpis egestas. Praesent aliquam mollis, turpis eu tristique vehicula,
+	sapien elit ornare magna, eleifend aliquam sem sit amet est dolor.
+</p>
+
+</div>
+
+
+<!-- Read More link -->
+</div>
+<div class="clearfix"></div>  </article>
+<article class="span6 item item_num3 item__module  lastItem" id="item_114">
+
+<div class="item_content">
+<!-- Intro Image -->
+<figure class="item_img img-intro img-intro__left"> 
+<a href="about/47-why-choose-us/114-donec-venenatis-tempor-urna-ac-dictum-nam-id-augue-augue.html">
+<img src="{%static 'img/page2_img5.jpg' %}" alt="">
+</a>
+</figure>
+<!-- Item title -->
+<h4 class="item_title item_title__"><a href="about/47-why-choose-us/114-donec-venenatis-tempor-urna-ac-dictum-nam-id-augue-augue.html"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Donec</span> <span class="item_title_part_1 item_title_part_even item_title_part_first_half">venenatis</span> <span class="item_title_part_2 item_title_part_odd item_title_part_first_half">tempor</span> <span class="item_title_part_3 item_title_part_even item_title_part_first_half">urna</span> <span class="item_title_part_4 item_title_part_odd item_title_part_first_half">ac</span> <span class="item_title_part_5 item_title_part_even item_title_part_first_half"></span> <span class="item_title_part_6 item_title_part_odd item_title_part_second_half">dictum.</span> <span class="item_title_part_7 item_title_part_even item_title_part_second_half">Nam</span> <span class="item_title_part_8 item_title_part_odd item_title_part_second_half">id</span> <span class="item_title_part_9 item_title_part_even item_title_part_second_half">augue</span> <span class="item_title_part_10 item_title_part_odd item_title_part_second_half item_title_part_last">augue.</span></a></h4>
+<!-- Introtext -->
+<div class="item_introtext">
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent aliquam est
+	vel ornare magna, eleifend aliquam sem elit unc sit amet est dolor.
+</p>
+
+</div>
+
+
+<!-- Read More link -->
+</div>
+<div class="clearfix"></div>  </article>
+</div>
+<div class="clearfix"></div>
+
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+		<!-- Bottom -->
+<div id="bottom">
+
+<div class="moduletable "><div class="module_container"><header><h3 class="moduleTitle ">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Get</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">to</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">know</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_first_half">more</span>
+<span class="item_title_part_4 item_title_part_odd item_title_part_second_half">about</span>
+<span class="item_title_part_5 item_title_part_even item_title_part_second_half">your</span>
+<span class="item_title_part_6 item_title_part_odd item_title_part_second_half item_title_part_last">dog</span>
+</h3>
+</header>
+<div class="mod-article-single mod-article-single__" id="module_157">
+<div class="item__module" id="item_115">
+<!-- Item Title -->
+<h4 class="item-title">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">We</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">know</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_first_half">how</span>
+<span class="item_title_part_3 item_title_part_even item_title_part_first_half">to</span>
+<span class="item_title_part_4 item_title_part_odd item_title_part_second_half">make</span>
+<span class="item_title_part_5 item_title_part_even item_title_part_second_half">your</span>
+<span class="item_title_part_6 item_title_part_odd item_title_part_second_half">dog</span>
+<span class="item_title_part_7 item_title_part_even item_title_part_second_half item_title_part_last">happy!</span>
+</h4>
+
+<!-- Intro Text -->
+<div class="item_introtext">
+<p>Phasellus tempus nisl eget lacus suscipit sollicitudin. Nulla condimentum orci volutpat magna laoreet volutpat.
+	Proin tempus, nulla sit amet rhoncus eleifend, odio erat tempor justo, ac tempus elit urna eget eros. Duis elementum dui id ipsum vulputate, in vulputate ex egestas.
+Nam consequat suscipit pellentesque.
+</p>
+</div>
+</div>
+</div></div></div>
+
+</div>
+
+<div id="push"></div>
+</div>
+</div>
+<div id="footer-wrapper">
+<div class="footer-wrapper-inner">
+<!-- Copyright -->
+<div id="copyright" role="contentinfo">
+<div class="row-container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="copyright span8">
+<span class="siteName">Dogs Club</span>
+<span class="copy">&copy;</span>
+<span class="year">2015</span>
+<a class="privacy_link" rel="license" href="privacy-policy.html">Privacy policy</a>
+</div>
+<div class="moduletable   span4">
+<div class="module_container"><header><h5 class="moduleTitle title">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">FACEBOOK</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_first_half">LIKE</span>
+<span class="item_title_part_2 item_title_part_odd item_title_part_second_half item_title_part_last">BOX</span>
+</h5>
+</header>
+<div id="tm_facebook_page_plugin_140" class="tm_facebook_page_plugin_">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/en-GB/sdk.js#xfbml=1&version=v2.3&appId=930899133604868";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><div class="fb-page" data-href="https://www.facebook.com/facebook" data-hide-cover="0" data-show-facepile="1" data-width="" data-height="" data-show-posts="0"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div></div>
+<script>
+	;(function ($) {
+        var o = $('.fb-page');
+
+        $(window).load(function () {
+            o.css({'display': 'block'})
+                .find('span').css({
+                    'width': '100%',
+                    'display': 'block',
+                    'text-align': 'inherit'
+                })
+                .find('iframe').css({
+                    'display': 'inline-block',
+                    'position': 'static'
+                });
+        });
+
+        $(window).on('load resize', function () {
+            if (o.parent().width() < o.find('iframe').width()) {
+                o.find('iframe').css({
+                    'transform': 'scale(' + (o.width() / o.find('iframe').width()) + ')',
+                    'transform-origin': '0% 0%'
+                })
+                    .parent().css({
+                        'height': (o.find('iframe').height() * (o.width() / o.find('iframe').width())) + 'px'
+                    });
+            } else {
+                o
+                    .find('span').css({
+                        'height': o.find('iframe').height()
+                    })
+                    .find('iframe').css({
+                        'transform': 'none'
+                    });
+            }
+        });
+    })(jQuery);
+</script>
+</div>
+</div>
+<div class="moduletable social_menu  span2">
+<div class="module_container">
+<div class="mod-menu">
+<ul class="nav menu social">
+<li class="item-148"><a class="fa fa-tumblr-square" href="#" title="tumblr" >Tumblr</a>
+</li>
+<li class="item-149"><a class="fa fa-facebook-square" href="#" title="facebook" >Facebook</a>
+</li>
+<li class="item-150"><a class="fa fa-youtube" href="#" title="Youtube" >You Tube</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="moduletable  bordered  span3">
+<div class="module_container">
+<header>
+<h5 class="moduleTitle fa fa-phone-square">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">TELEPHONES</span>
+</h5></header><div class="mod-menu">
+<ul class="nav menu ">
+<li class="item-332">
+<span class="separator">+1 800 603 6035</span>
+</li>
+<li class="item-333">
+<span class="separator">+1 800 603 0587</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="moduletable  bordered mail  span3">
+<div class="module_container">
+<header>
+<h5 class="moduleTitle fa fa-envelope">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">E-Mail</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">Us</span>
+</h5>
+</header>
+<div class="mod-menu">
+<ul class="nav menu ">
+<li class="item-334"><a href="http://livedemo00.template-help.com/cdn-cgi/l/email-protection#d8b5b9b1b498bcbdb5b7b4b1b6b3f6b7aabf" ><span class="__cf_email__" data-cfemail="b9d4d8d0d5f9dddcd4d6d5d0d7d297d6cbde">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a>
+</li><li class="item-335"><a href="http://livedemo00.template-help.com/cdn-cgi/l/email-protection#90fdf1f9fcd0f4f5fdfffcf9fefbbeffe2f7" ><span class="__cf_email__" data-cfemail="3a5955544e5b594e7a5e5f5755565354511455485d">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a>
+</li>	</ul>
+</div>
+</div>
+</div>
+<!-- {%FOOTER_LINK} -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="back-top">
+<a href="#"><span></span> </a>
+</div>
+<div id="modal" class="modal hide fade loginPopup">
+<div class="modal-hide"></div>
+<div class="modal_wrapper">
+<button type="button" class="close modalClose">×</button>
+<div class="moduletable ">
+<div class="modal-header"><header><h3 class="">
+<span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Login</span>
+<span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">form</span>
+</h3>
+</header>
+</div>
+<div class="modal-body">
+
+<div class="lr_social_login_basic_150">
+<div class="lr_providers">
+<div class="lr_icons_box"><div>
+<a class="lr_providericons lr_facebook" href="javascript:void(0);"
+   onclick="javascript:window.open('http://www.facebook.com/dialog/oauth?client_id=296188807244109&amp;
+   redirect_uri=http://livedemo00.template-help.com/joomla_55099/?provider=facebook&amp;display=popup&amp;
+   scope=email,user_photos,user_about_me,user_hometown,user_photos','Facebook','toolbar=0,scrollbars=0,location=0,
+   statusbar=0,menubar=0,resizable=0,width=400px,height=400px');" rel="nofollow" title="Login with Facebook">
+	Login with Facebook
+</a>
+</div>
+<div>
+<a class="lr_providericons lr_google" href="javascript:void(0);"
+onclick="javascript:window.open('https://accounts.google.com/o/oauth2/auth?response_type=code&amp;
+redirect_uri=http://livedemo00.template-help.com/joomla_55099/?provider=google&amp;
+client_id=4ea43331a8b16c6ddb33685fc03635a8&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email','Google','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400px,height=400px');" rel="nofollow" title="Login with Google">Login with Google</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="moduletable olark"><div class="modal-body">
+
+<!-- begin olark code -->
+<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('5615-604-10-1042');/*]]>*/</script>
+<!-- end olark code --></div></div><div class="moduletable "><div class="modal-body"><div class="mod-login mod-login__">
+<form action="http://livedemo00.template-help.com/joomla_55099/index.php/about" method="post" id="login-form-16" class="form-inline">
+<div class="mod-login_userdata">
+<div id="form-login-username-16" class="control-group">
+<div class="controls">
+<input id="mod-login_username-16" class="inputbox mod-login_username" type="text" name="username" tabindex="1" size="18" placeholder="User name" required>
+</div>
+</div>
+<div id="form-login-password-16" class="control-group">
+<div class="controls">
+<input id="mod-login_passwd-16" class="inputbox mod-login_passwd" type="password" name="password" tabindex="2" size="18" placeholder="Password"  required>
+</div>
+</div>
+<label for="mod-login_remember-16" class="checkbox">
+<input id="mod-login_remember-16" class="mod-login_remember" type="checkbox" name="remember" value="yes">
+Remember me			</label>
+<div class="mod-login_submit">
+<button type="submit" tabindex="3" name="Submit" class="btn btn-primary">Log in</button>
+</div>
+
+<ul class="unstyled">
+<li><a href="username-reminder-request.html" class="" title="Forgot your username?">Forgot your username?</a></li>
+<li><a href="password-reset.html" class="" title="Forgot your password?">Forgot your password?</a></li>
+<li><a href="user-registration.html">Create an account</a></li>
+</ul>
+<input type="hidden" name="option" value="com_users">
+<input type="hidden" name="task" value="user.login">
+<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZ2aWV3PWNhdGVnb3J5JmxheW91dD10aGVtZTMxNDQ6Y2F0ZWdvcnkmaWQ9OA==">
+<input type="hidden" name="01a117b65ba1470af080cbd2d902a867" value="1" />		</div>
+</form>
+</div></div></div>
+</div>
+</div>
+
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script>
+      jQuery(function($) {
+        $(window).load(function(){
+          $.stellar({responsive: true,horizontalScrolling: false});
+        });
+      });
+    </script>
+        <script src="{% static 'js/jquery.simplr.smoothscroll.min.js' %}"></script>
+        <script src="{% static 'js/jquery.BlackAndWhite.min.js' %}"></script>
+    <script>
+      ;(function($, undefined) {
+      $.fn.BlackAndWhite_init = function () {
+        var selector = $(this);
+        selector.find('img').not(".slide-img").parent().BlackAndWhite({
+          invertHoverEffect: ".$this->params->get('invertHoverEffect').",
+          intensity: 1,
+          responsive: true,
+          speed: {
+              fadeIn: ".$this->params->get('fadeIn').",
+              fadeOut: ".$this->params->get('fadeOut')." 
+          }
+        });
+      }
+      })(jQuery);
+      jQuery(window).load(function($){
+        jQuery('.item_img a').find('img').not('.lazy').parent().BlackAndWhite_init();
+      });
+    </script>
+        <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox-buttons.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox-thumbs.js' %}"></script>
+    <script src="{% static 'js/jquery.pep.js' %}"></script>
+    <script src="{% static 'js/jquery.vide.min.js' %}"></script>
+    <script src="{% static 'js/autosize.min.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <script type="text/javascript">/* CloudFlare analytics upgrade */
+</script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"72d7dcce33","applicationID":"1388850","transactionName":"ZV1TZ0FTVkFVWkwKXlwXcFBHW1dcG3pXDUVXVkVwXFxMQFtVVAZDHVxYQENeWUs=","queueTime":0,"applicationTime":699,"atts":"SRpQEQlJRU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+
+<!-- Mirrored from livedemo00.template-help.com/joomla_55099/index.php/about by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Sep 2015 18:42:12 GMT -->
+</html>

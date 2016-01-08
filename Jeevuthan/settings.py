@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -42,6 +42,8 @@ INSTALLED_APPS = (
     'crispy_forms',
     'captcha',
     'PIL',
+    'formtools',
+    'localflavor',
     #my-apps
     'home',
     'register_for_pet',
